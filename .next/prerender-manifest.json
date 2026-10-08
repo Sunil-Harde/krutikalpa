@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/services/website-development":{},"/services/web-application-development":{},"/services/ai-agents-development":{},"/services/chatbot-development":{},"/services/mobile-app-development":{},"/services/custom-software-development":{},"/services/erp-development":{},"/services/cloud-solutions":{},"/services/it-consulting":{}},"dynamicRoutes":{"/services/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/services/[slug]","routeRegex":"^\\/services\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"88e3ac1289bfc09ba91ce4ce4b4491e4","previewModeSigningKey":"5e859906da3f5d774a3cf5f185f5d5f07959c899eaa80e05b1befaf4c60c1957","previewModeEncryptionKey":"77690821d2310bf40cec692a40b7fa11b14c08af9877359b1e3396c6fceb2ae9"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "3da973984fb8636d3f4da3744fc32bb3",
+    "previewModeSigningKey": "55001e507aecfddbdb331409096966c17d7cebd7decf0842548ccc6ab3ecee25",
+    "previewModeEncryptionKey": "2a0440f7094da6840f117e58f437029316441a21ac52526ef088d6f644b2827e"
+  }
+}
