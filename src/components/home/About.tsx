@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { companyData } from "@/data/company";
 
+
 export function About() {
   return (
     <section id="about" className="py-20 md:py-28 relative bg-[#050505] overflow-hidden">
@@ -104,13 +105,14 @@ export function About() {
             </div>
           </div>
 
+
           {/* Right Column: Office Image Mockup with KrutiKalpa Wall Branding */}
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-white/[0.1] shadow-2xl bg-zinc-900 group">
               {/* Modern Office Visual */}
               <div className="relative aspect-[4/5] w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80"
+                  src="/images/hero/KrutiKalpa_Solutions_Room.png"
                   alt="KrutiKalpa Solutions Corporate Headquarters"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700 brightness-90"

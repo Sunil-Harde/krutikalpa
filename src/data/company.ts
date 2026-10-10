@@ -64,9 +64,9 @@ export const companyData: CompanyInfo = {
   contact: {
     email: "info@krutikalpa.com",
     supportEmail: "support@krutikalpa.com",
-    phone: "+919376543210",
-    phoneDisplay: "+91 93765 43210",
-    alternatePhone: "+91 636491 7021",
+    phone: "+91 6364917021",
+    phoneDisplay: "+91 6364917021",
+    alternatePhone: "",
     whatsapp: "+916364917021",
     address: {
       building: "Kohinoor B-Zone, First Floor, 106",

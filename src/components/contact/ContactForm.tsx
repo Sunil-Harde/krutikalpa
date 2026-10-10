@@ -65,7 +65,7 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="glass-panel p-8 sm:p-10 rounded-3xl border border-white/[0.08] space-y-5"
+      className="glass-panel p-6 sm:p-10 rounded-3xl border border-white/[0.08] space-y-5"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {/* Full Name */}
@@ -114,7 +114,7 @@ export function ContactForm() {
           <input
             type="tel"
             {...register("phone")}
-            placeholder="+91 98765 43210"
+            placeholder="+91 6364917021"
             className="w-full bg-[#0A0A0A] border border-white/[0.1] rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-[#F97316]"
           />
           {errors.phone && (

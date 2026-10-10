@@ -6,6 +6,8 @@ export interface ServiceItem {
   heroTag: string;
   fullDescription: string;
   iconName: string;
+  image?: string;
+  imageAlt?: string;
   highlights: string[];
   features: {
     title: string;
@@ -30,6 +32,8 @@ export const servicesData: ServiceItem[] = [
     fullDescription:
       "We build visually captivating, ultra-fast, and search-optimized websites designed to establish brand authority and convert visitors into loyal clients. Leveraging modern frameworks, responsive grid systems, and technical SEO architecture, we ensure your company looks world-class on every device.",
     iconName: "Globe",
+    image: "/images/services/website-development.webp",
+    imageAlt: "Modern website interface displayed on a desktop monitor",
     highlights: [
       "Sub-second load times with Core Web Vitals optimization",
       "Semantic HTML5 & Automated Schema markup for rank dominance",
@@ -82,6 +86,8 @@ export const servicesData: ServiceItem[] = [
     fullDescription:
       "From complex SaaS platforms to internal workflow hubs, our team engineers robust, scalable web applications that handle heavy transaction volumes without flinching. We emphasize clean code, distributed state management, and enterprise-grade data security.",
     iconName: "Code2",
+    image: "/images/services/web-application-development.webp",
+    imageAlt: "Enterprise web application dashboard with analytics widgets",
     highlights: [
       "Event-driven microservices & serverless backends",
       "Real-time data streaming via WebSockets & GraphQL subscriptions",
@@ -134,6 +140,8 @@ export const servicesData: ServiceItem[] = [
     fullDescription:
       "Empower your business with autonomous AI agents capable of reasoning, making decisions, retrieving company knowledge, and executing multi-step workflows. We leverage state-of-the-art LLMs, multi-agent frameworks, and vector retrieval (RAG) to automate tasks previously requiring human hours.",
     iconName: "Bot",
+    image: "/images/services/ai-agents-development.webp",
+    imageAlt: "Connected autonomous AI agents visualization",
     highlights: [
       "Multi-agent orchestration using CrewAI, LangChain, and LangGraph",
       "Context-aware Retrieval-Augmented Generation (RAG) on private documents",
@@ -186,6 +194,8 @@ export const servicesData: ServiceItem[] = [
     fullDescription:
       "Transform client interactions with conversational AI that understands nuances, speaks multiple languages (including Indian regional languages), and answers queries instantly. We deploy bots across your website, WhatsApp, Slack, and mobile applications.",
     iconName: "MessageSquare",
+    image: "/images/services/chatbot-development.webp",
+    imageAlt: "AI-powered customer support chatbot interface",
     highlights: [
       "Multilingual support with contextual natural language comprehension",
       "Seamless WhatsApp Business Cloud API & Web chat widgets",
@@ -238,6 +248,8 @@ export const servicesData: ServiceItem[] = [
     fullDescription:
       "Reach your users wherever they are with fluid, offline-capable, and visually stunning mobile applications. Whether building for consumer app stores or enterprise field workforces, we craft intuitive native and cross-platform mobile experiences.",
     iconName: "Smartphone",
+    image: "/images/services/mobile-app-development.webp",
+    imageAlt: "Mobile application interfaces displayed on smartphones",
     highlights: [
       "Cross-platform parity using React Native and Flutter",
       "Offline-first synchronization with SQLite and local storage",
@@ -290,6 +302,8 @@ export const servicesData: ServiceItem[] = [
     fullDescription:
       "Off-the-shelf software rarely fits intricate business models. We build bespoke software architectures from the ground up, designed precisely around your unique processes, data models, compliance frameworks, and long-term organizational roadmap.",
     iconName: "Cpu",
+    image: "/images/services/custom-software-development.webp",
+    imageAlt: "Enterprise custom software platform visualization",
     highlights: [
       "Full IP ownership and bespoke architecture with no vendor lock-in",
       "Strict data sovereignty aligned with India's DPDP Act & international standards",

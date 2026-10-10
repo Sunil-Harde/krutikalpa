@@ -28,7 +28,7 @@ const guarantees = [
 
 export default function ContactPage() {
   return (
-    <div className="pb-20 bg-[#050505]">
+    <div className="pb-10 bg-[#050505]">
       {/* Hero Header */}
       <section className="relative py-16 md:py-24 border-b border-white/[0.08] overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#F97316]/10 rounded-full blur-[140px] pointer-events-none" />
@@ -54,10 +54,10 @@ export default function ContactPage() {
       </section>
 
       {/* Main Grid: Info + Contact Form */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Left Column: Direct Details */}
-          <div className="lg:col-span-5 space-y-8">
+          <div className="lg:col-span-6 space-y-8">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F97316]/10 border border-[#F97316]/20 text-[#F97316] text-xs font-semibold uppercase tracking-wider mb-4">
                 Corporate Office
@@ -71,7 +71,7 @@ export default function ContactPage() {
             </div>
 
             {/* Address Card */}
-            <div className="p-6 rounded-2xl bg-[#0A0A0A] border border-white/[0.08] hover:border-[#F97316]/30 transition-all">
+            <div className="p-5 rounded-2xl bg-[#0A0A0A] border border-white/[0.08] hover:border-[#F97316]/30 transition-all">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-[#F97316] shrink-0">
                   <MapPin className="w-5 h-5" />
@@ -101,51 +101,61 @@ export default function ContactPage() {
 
             {/* Email & Phone Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-6 rounded-2xl bg-[#0A0A0A] border border-white/[0.08] hover:border-[#F97316]/30 transition-all">
-                <div className="w-10 h-10 rounded-xl bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-[#F97316] mb-3">
-                  <Mail className="w-5 h-5" />
+              <div className="p-5 rounded-2xl bg-[#0A0A0A] border border-white/[0.08] hover:border-[#F97316]/30 transition-all">
+                <div className="flex items-start gap-4 ">
+
+                  <div className="w-10 h-10 rounded-xl bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-[#F97316] mb-3">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">
+                      Email Inquiries
+                    </h3>
+                    <a
+                      href={`mailto:${companyData.contact.email}`}
+                      className="text-sm font-semibold text-white hover:text-[#F97316] transition-colors break-all block"
+                    >
+                      {companyData.contact.email}
+                    </a>
+                    <a
+                      href={`mailto:${companyData.contact.supportEmail}`}
+                      className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors break-all block mt-1"
+                    >
+                      {companyData.contact.supportEmail}
+                    </a>
+                  </div>
                 </div>
-                <h3 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">
-                  Email Inquiries
-                </h3>
-                <a
-                  href={`mailto:${companyData.contact.email}`}
-                  className="text-sm font-semibold text-white hover:text-[#F97316] transition-colors break-all block"
-                >
-                  {companyData.contact.email}
-                </a>
-                <a
-                  href={`mailto:${companyData.contact.supportEmail}`}
-                  className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors break-all block mt-1"
-                >
-                  {companyData.contact.supportEmail}
-                </a>
               </div>
 
-              <div className="p-6 rounded-2xl bg-[#0A0A0A] border border-white/[0.08] hover:border-[#F97316]/30 transition-all">
-                <div className="w-10 h-10 rounded-xl bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-[#F97316] mb-3">
-                  <Phone className="w-5 h-5" />
+              <div className="p-5 rounded-2xl bg-[#0A0A0A] border border-white/[0.08] hover:border-[#F97316]/30 transition-all">
+                <div className="flex items-start gap-4">
+
+                  <div className="w-10 h-10 rounded-xl bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-[#F97316] mb-3">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">
+                      Direct Line
+                    </h3>
+                    <a
+                      href={`tel:${companyData.contact.phone}`}
+                      className="text-sm font-semibold text-white hover:text-[#F97316] transition-colors block"
+                    >
+                      {companyData.contact.phoneDisplay}
+                    </a>
+                    <a
+                      href={`tel:${companyData.contact.alternatePhone.replace(/\s+/g, "")}`}
+                      className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors block mt-1"
+                    >
+                      {companyData.contact.alternatePhone}
+                    </a>
+                  </div>
                 </div>
-                <h3 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">
-                  Direct Line
-                </h3>
-                <a
-                  href={`tel:${companyData.contact.phone}`}
-                  className="text-sm font-semibold text-white hover:text-[#F97316] transition-colors block"
-                >
-                  {companyData.contact.phoneDisplay}
-                </a>
-                <a
-                  href={`tel:${companyData.contact.alternatePhone.replace(/\s+/g, "")}`}
-                  className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors block mt-1"
-                >
-                  {companyData.contact.alternatePhone}
-                </a>
               </div>
             </div>
 
             {/* Operating Hours & WhatsApp */}
-            <div className="p-6 rounded-2xl bg-[#0A0A0A] border border-white/[0.08] space-y-4">
+            <div className="p-5 rounded-2xl bg-[#0A0A0A] border border-white/[0.08] space-y-4">
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-[#F97316]" />
                 <div>
@@ -153,7 +163,7 @@ export default function ContactPage() {
                     Business Hours
                   </h4>
                   <p className="text-sm text-zinc-200 font-medium">
-                    Monday &ndash; Friday: 9:30 AM &ndash; 6:30 PM IST
+                    Monday &ndash; Saturday: 10:00 AM &ndash; 6:00 PM IST
                   </p>
                 </div>
               </div>
@@ -177,7 +187,7 @@ export default function ContactPage() {
             </div>
 
             {/* Engagement Guarantees */}
-            <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/[0.06]">
+            <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/[0.06]">
               <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-300 mb-3">
                 Our Engagement Guarantee
               </h4>
@@ -193,8 +203,8 @@ export default function ContactPage() {
           </div>
 
           {/* Right Column: Contact Form */}
-          <div className="lg:col-span-7">
-            <div className="p-8 sm:p-10 rounded-3xl bg-[#0A0A0A] border border-white/[0.08] relative">
+          <div className="lg:col-span-6">
+            <div className="">
               <div className="mb-8">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#F97316]">
                   START A CONVERSATION

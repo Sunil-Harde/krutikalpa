@@ -35,8 +35,8 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center text-xl font-bold tracking-tight text-white leading-none">
-                  <span className="text-[#F97316]">Kruti</span>
-                  <span className="text-white">Kalpa</span>
+                  <span className="text-white">Kruti</span>
+                  <span className="text-[#F97316]">Kalpa</span>
                 </div>
                 <span className="text-[11px] tracking-wider text-zinc-400 font-medium uppercase mt-0.5">
                   Solutions

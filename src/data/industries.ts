@@ -22,7 +22,7 @@ export const industriesData: IndustryItem[] = [
     shortDescription: "Streamlining operations with digital solutions and smart automation.",
     fullDescription:
       "Transform discrete and process manufacturing with connected digital architectures. We develop smart factory applications, inventory control systems, equipment monitoring dashboards, and predictive maintenance portals that minimize unplanned downtime and optimize shop-floor productivity.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    image: "images/Industries/Manufacturing.png",
     iconName: "Factory",
     stats: "35%",
     statsLabel: "Average Downtime Reduction",
@@ -47,7 +47,7 @@ export const industriesData: IndustryItem[] = [
     title: "Healthcare",
     shortDescription: "Innovative healthcare technology solutions for care delivery and governance.",
     fullDescription:
-      "Modernize clinical workflows, patient management, and public health governance with HIPAA and ABDM-compliant healthcare software. From national health claim desk audits (Ayushman Bharat, RSBY) to hospital management and ArogyaMitra citizen health portals, we build mission-critical healthcare systems.",
+      "Modernize clinical workflows, patient management, and public health governance with healthcare software. From national health claim desk audits (Ayushman Bharat, RSBY) to hospital management and ArogyaMitra citizen health portals, we build mission-critical healthcare systems.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
     iconName: "HeartPulse",
     stats: "6L+",
@@ -74,7 +74,9 @@ export const industriesData: IndustryItem[] = [
     shortDescription: "Empowering learning and institutional administration through technology.",
     fullDescription:
       "Deliver modern digital campuses, interactive e-learning portals, and administrative automation suites. We build student information systems (SIS), automated fee collection gateways, attendance tracking, and AI-assisted personalized study companions for schools, colleges, and EdTech platforms.",
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+    // image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+    image: "images/Industries/Education.png",
+    
     iconName: "GraduationCap",
     stats: "40%",
     statsLabel: "Admin Overhead Saved",
@@ -119,32 +121,37 @@ export const industriesData: IndustryItem[] = [
     technologies: ["Next.js 15", "Node.js", "Stripe / Razorpay", "PostgreSQL", "Redis", "Elasticsearch"],
     caseStudyHighlight: "B2B E-commerce platform scaling 10,000+ SKUs with real-time stock allocation.",
   },
-  {
-    id: "logistics-supply-chain",
-    slug: "logistics-supply-chain",
-    title: "Logistics & Supply Chain",
-    shortDescription: "Optimizing supply chain with smart systems and real-time tracking.",
-    fullDescription:
-      "Gain complete visibility over fleet movements, warehouse dispatches, and last-mile delivery milestones. Our logistics software features live GPS telemetry, automated route optimization, digital proof-of-delivery (PoD), and vendor SLA monitoring.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-    iconName: "Truck",
-    stats: "28%",
-    statsLabel: "Fuel & Fleet Transit Cost Savings",
-    challenges: [
-      "Blind spots during in-transit shipments and dispatch handoffs",
-      "Disputes over lost items or late delivery penalties",
-      "Suboptimal route planning causing fuel wastage",
-      "Delayed paper bills of lading and signature verifications",
-    ],
-    solutions: [
-      "Field Assist Geo-Tagged Vehicle & Personnel Tracking App",
-      "Centralized Logistics Control Tower & Dispatch Dispatcher",
-      "Digital Proof of Delivery (e-POD) with In-App Signature & Photos",
-      "Automated Milestone SMS & WhatsApp Notifications for Customers",
-    ],
-    technologies: ["React Native", "Node.js", "PostgreSQL / PostGIS", "Google Maps API", "WebSockets"],
-    caseStudyHighlight: "Deployed Field Assist tracking system managing 2,500+ daily field visits with geo-fencing.",
-  },
+
+  
+  // {
+  //   id: "logistics-supply-chain",
+  //   slug: "logistics-supply-chain",
+  //   title: "Logistics & Supply Chain",
+  //   shortDescription: "Optimizing supply chain with smart systems and real-time tracking.",
+  //   fullDescription:
+  //     "Gain complete visibility over fleet movements, warehouse dispatches, and last-mile delivery milestones. Our logistics software features live GPS telemetry, automated route optimization, digital proof-of-delivery (PoD), and vendor SLA monitoring.",
+  //   image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+  //   iconName: "Truck",
+  //   stats: "28%",
+  //   statsLabel: "Fuel & Fleet Transit Cost Savings",
+  //   challenges: [
+  //     "Blind spots during in-transit shipments and dispatch handoffs",
+  //     "Disputes over lost items or late delivery penalties",
+  //     "Suboptimal route planning causing fuel wastage",
+  //     "Delayed paper bills of lading and signature verifications",
+  //   ],
+  //   solutions: [
+  //     "Field Assist Geo-Tagged Vehicle & Personnel Tracking App",
+  //     "Centralized Logistics Control Tower & Dispatch Dispatcher",
+  //     "Digital Proof of Delivery (e-POD) with In-App Signature & Photos",
+  //     "Automated Milestone SMS & WhatsApp Notifications for Customers",
+  //   ],
+  //   technologies: ["React Native", "Node.js", "PostgreSQL / PostGIS", "Google Maps API", "WebSockets"],
+  //   caseStudyHighlight: "Deployed Field Assist tracking system managing 2,500+ daily field visits with geo-fencing.",
+  // },
+
+
+
   {
     id: "real-estate",
     slug: "real-estate",
