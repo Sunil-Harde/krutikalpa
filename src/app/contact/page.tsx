@@ -12,11 +12,36 @@ import {
 } from "lucide-react";
 import { companyData } from "@/data/company";
 import { ContactForm } from "@/components/contact/ContactForm";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Get in Touch | KrutiKalpa Solutions",
+  title: "Contact Us - Baner, Pune Headquarters & Inquiries",
   description:
-    "Connect with KrutiKalpa Solutions Private Limited. Reach our engineering office at Kohinoor B-Zone, Baner, Pune for custom software, AI agents, web development, and digital transformation inquiries.",
+    "Get in touch with KrutiKalpa Solutions Private Limited. Visit our headquarters at Kohinoor B-Zone, Baner, Pune, call +91 6364917021, or email info@krutikalpa.com for software & AI proposals.",
+  alternates: {
+    canonical: "https://krutikalpa.com/contact/",
+  },
+  openGraph: {
+    title: "Contact KrutiKalpa Solutions | Pune Office & Inquiries",
+    description:
+      "Schedule a consultation with our senior technology team. Reach our Baner, Pune headquarters for software, AI, and enterprise inquiries.",
+    url: "https://krutikalpa.com/contact/",
+    images: [
+      {
+        url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
+        width: 1200,
+        height: 630,
+        alt: "KrutiKalpa Solutions Corporate Headquarters - Baner, Pune",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact KrutiKalpa Solutions | Pune, Maharashtra",
+    description:
+      "Direct discussions with senior engineering architects. Response within 24 business hours.",
+    images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
+  },
 };
 
 const guarantees = [
@@ -29,6 +54,13 @@ const guarantees = [
 export default function ContactPage() {
   return (
     <div className="pb-10 bg-[#E5E7EB] dark:bg-[#080808] transition-colors duration-300">
+      <JsonLd
+        type="BreadcrumbList"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Contact Us", url: "/contact/" },
+        ]}
+      />
       {/* Hero Header */}
       <section className="relative py-16 md:py-24 border-b border-[#D1D5DB] dark:border-[#262626] overflow-hidden bg-[#F1F3F5] dark:bg-[#0D0D0D]/60">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#FF6B0A]/10 rounded-full blur-[140px] pointer-events-none" />

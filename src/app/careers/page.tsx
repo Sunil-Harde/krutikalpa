@@ -18,11 +18,36 @@ import {
 import { careerOpenings } from "@/data/careers";
 import { companyData } from "@/data/company";
 import { CTA } from "@/components/home/CTA";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Careers | Join Our Team | KrutiKalpa Solutions",
+  title: "Careers | Engineering & AI Opportunities in Pune",
   description:
-    "Explore career opportunities at KrutiKalpa Solutions Private Limited. Join our engineering, AI, and design teams in Pune building high-impact digital solutions.",
+    "Explore tech careers at KrutiKalpa Solutions in Baner, Pune. Join our Next.js, Python AI, and cloud teams building enterprise architectures and digital governance platforms.",
+  alternates: {
+    canonical: "https://krutikalpa.com/careers/",
+  },
+  openGraph: {
+    title: "Careers at KrutiKalpa Solutions | Pune Engineering Roles",
+    description:
+      "Join an engineering-first culture solving mission-critical software and AI problems in Pune, Maharashtra. Explore our open roles.",
+    url: "https://krutikalpa.com/careers/",
+    images: [
+      {
+        url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
+        width: 1200,
+        height: 630,
+        alt: "Careers at KrutiKalpa Solutions Pune",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Careers at KrutiKalpa Solutions | Pune, India",
+    description:
+      "Build the future of enterprise software, autonomous AI, and cloud systems with KrutiKalpa Solutions.",
+    images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
+  },
 };
 
 const perks = [
@@ -67,6 +92,13 @@ const perks = [
 export default function CareersPage() {
   return (
     <div className="pb-20 bg-[#E5E7EB] dark:bg-[#080808] transition-colors duration-300">
+      <JsonLd
+        type="BreadcrumbList"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Careers", url: "/careers/" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 border-b border-[#D1D5DB] dark:border-[#262626] overflow-hidden bg-[#F1F3F5] dark:bg-[#0D0D0D]/60">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#FF6B0A]/10 rounded-full blur-[140px] pointer-events-none" />

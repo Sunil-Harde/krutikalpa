@@ -35,7 +35,7 @@ export function CTA() {
           {/* Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="btn-orange-gradient text-base font-semibold group px-8 py-3.5"
             >
               <span>Let&apos;s Talk</span>
@@ -43,7 +43,7 @@ export function CTA() {
             </Link>
 
             <Link
-              href="/services"
+              href="/services/"
               className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-base font-semibold bg-zinc-100 hover:bg-zinc-200 dark:bg-white/[0.05] dark:hover:bg-white/[0.1] text-zinc-900 dark:text-white border border-zinc-300 dark:border-white/20 hover:border-[#FF6B0A] dark:hover:border-[#FF6B0A] transition-all"
             >
               <span>Our Services</span>

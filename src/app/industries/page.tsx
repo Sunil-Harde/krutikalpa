@@ -14,11 +14,36 @@ import {
 } from "lucide-react";
 import { industriesData, IndustryItem } from "@/data/industries";
 import { CTA } from "@/components/home/CTA";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Industries | Specialized Domain Solutions",
+  title: "Industries | Domain Software Solutions for Manufacturing, Healthcare & Retail",
   description:
-    "Discover how KrutiKalpa delivers tailored software architectures for Manufacturing, Healthcare, Retail & E-commerce, Real Estate, and Automotive.",
+    "Discover how KrutiKalpa Solutions delivers tailored software, AI automation, and cloud systems for Manufacturing, Healthcare, Retail & E-commerce, Real Estate, and Automotive sectors.",
+  alternates: {
+    canonical: "https://krutikalpa.com/industries/",
+  },
+  openGraph: {
+    title: "Industries We Transform | KrutiKalpa Solutions",
+    description:
+      "Enterprise digital architectures engineered for Manufacturing, Healthcare, Retail & E-commerce, Real Estate, Logistics, and Automotive.",
+    url: "https://krutikalpa.com/industries/",
+    images: [
+      {
+        url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
+        width: 1200,
+        height: 630,
+        alt: "Industries Served by KrutiKalpa Solutions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Industries We Serve | KrutiKalpa Solutions",
+    description:
+      "Domain-specific software architectures engineered for critical operational, regulatory, and growth challenges.",
+    images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
+  },
 };
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -33,6 +58,13 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 export default function IndustriesPage() {
   return (
     <div className="pt-28 pb-20 bg-[#E5E7EB] dark:bg-[#080808] transition-colors duration-300">
+      <JsonLd
+        type="BreadcrumbList"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Industries", url: "/industries/" },
+        ]}
+      />
       {/* Header */}
       <section className="relative py-16 md:py-24 border-b border-zinc-200 dark:border-white/[0.08] overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[320px] bg-[#FF6B0A]/10 rounded-full blur-[130px] pointer-events-none" />

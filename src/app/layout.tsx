@@ -16,57 +16,59 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://krutikalpa.com"),
   title: {
-    default: "KrutiKalpa Solutions | Transforming Businesses Through Technology",
+    default: "KrutiKalpa Solutions | Software Development & AI Solutions in Pune",
     template: "%s | KrutiKalpa Solutions",
   },
   description:
-    "We design and develop high-performance websites, web applications, AI agents, chatbots, and custom software solutions. Partner with Pune's premier software engineering company.",
+    "KrutiKalpa Solutions is a technology engineering company based in Pune, Maharashtra. We design and build enterprise websites, scalable web applications, autonomous AI agents, chatbots, and custom software solutions.",
   keywords: [
     "KrutiKalpa Solutions",
-    "Software Development Company Pune",
-    "AI Agent Development",
+    "Software Development Company in Pune",
+    "Web Development Company in Pune",
+    "AI Agent Development Company",
     "Enterprise Web Applications",
-    "Chatbot Development",
-    "Custom Software Solutions",
+    "Chatbot Development Services",
+    "Custom Software Development Pune",
+    "ERP Development",
     "Digital Governance Systems",
-    "Next.js Development Agency",
+    "IT Services Pune Maharashtra",
   ],
-  authors: [{ name: "KrutiKalpa Solutions Private Limited" }],
+  authors: [{ name: "KrutiKalpa Solutions Private Limited", url: "https://krutikalpa.com" }],
   creator: "KrutiKalpa Solutions",
-  publisher: "KrutiKalpa Solutions",
+  publisher: "KrutiKalpa Solutions Private Limited",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   alternates: {
-    canonical: "https://krutikalpa.com",
+    canonical: "https://krutikalpa.com/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://krutikalpa.com",
+    url: "https://krutikalpa.com/",
     siteName: "KrutiKalpa Solutions",
-    title: "KrutiKalpa Solutions | Transforming Businesses Through Technology",
+    title: "KrutiKalpa Solutions | Software Development & AI Solutions in Pune",
     description:
-      "Enterprise websites, scalable web applications, autonomous AI agents, chatbots, and custom software engineering.",
+      "Transforming businesses through technology: enterprise websites, web applications, AI agents, chatbots, and custom software engineering.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&h=630&q=80",
+        url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
         width: 1200,
         height: 630,
-        alt: "KrutiKalpa Solutions - Transforming Businesses Through Technology",
+        alt: "KrutiKalpa Solutions - Software Engineering and AI Solutions in Pune",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "KrutiKalpa Solutions | Transforming Businesses Through Technology",
+    title: "KrutiKalpa Solutions | Software Development & AI Solutions in Pune",
     description:
-      "Modern software engineering company in Pune delivering Web, AI Agents, Chatbots, and Custom Software.",
+      "Software engineering and AI company in Pune, India delivering Websites, Web Apps, AI Agents, Chatbots, and Custom Software.",
     creator: "@krutikalpa",
     images: [
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&h=630&q=80",
+      "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
     ],
   },
   robots: {
@@ -114,6 +116,7 @@ export default function RootLayout({
         <ThemeProvider>
           <JsonLd type="Organization" />
           <JsonLd type="LocalBusiness" />
+          <JsonLd type="WebSite" />
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />

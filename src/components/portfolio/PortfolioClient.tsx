@@ -141,7 +141,7 @@ export function PortfolioClient() {
                 <div className="pt-4 border-t border-zinc-100 dark:border-white/[0.06] flex items-center justify-between">
                   <span className="text-xs text-zinc-500 font-medium">{project.client}</span>
                   <Link
-                    href={`/case-studies#${project.slug}`}
+                    href={`/case-studies/#${project.slug}`}
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#FF6B0A] hover:text-[#FF8C38] transition-colors"
                   >
                     <span>View Case Study</span>

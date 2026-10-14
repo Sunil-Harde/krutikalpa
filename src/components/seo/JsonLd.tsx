@@ -1,19 +1,28 @@
 import React from "react";
 import { companyData } from "@/data/company";
 
+export interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
 interface JsonLdProps {
   type?: "Organization" | "LocalBusiness" | "WebSite" | "Service" | "BreadcrumbList";
   data?: Record<string, any>;
+  breadcrumbs?: BreadcrumbItem[];
 }
 
-export function JsonLd({ type = "Organization", data }: JsonLdProps) {
+export function JsonLd({ type = "Organization", data, breadcrumbs }: JsonLdProps) {
+  const baseUrl = "https://krutikalpa.com";
+
   const defaultOrgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${baseUrl}/#organization`,
     name: companyData.name,
     legalName: companyData.legalName,
-    url: "https://krutikalpa.com",
-    logo: "https://krutikalpa.com/images/krutikalpa-logo.png",
+    url: `${baseUrl}/`,
+    logo: `${baseUrl}/images/krutikalpa-logo.svg`,
     description: companyData.subheadline,
     telephone: companyData.contact.phone,
     email: companyData.contact.email,
@@ -36,17 +45,34 @@ export function JsonLd({ type = "Organization", data }: JsonLdProps) {
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "ProfessionalService",
+    "@id": `${baseUrl}/#localbusiness`,
     name: companyData.legalName,
-    image: "https://krutikalpa.com/images/krutikalpa-office.jpg",
-    "@id": "https://krutikalpa.com/#localbusiness",
-    url: "https://krutikalpa.com",
+    alternateName: companyData.name,
+    image: `${baseUrl}/images/hero/KrutiKalpa_Solutions_Room.png`,
+    url: `${baseUrl}/`,
     telephone: companyData.contact.phone,
     email: companyData.contact.email,
     priceRange: "$$$",
+    currenciesAccepted: "INR, USD",
+    paymentAccepted: "Bank Transfer, Credit Card",
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Pune",
+      },
+      {
+        "@type": "State",
+        name: "Maharashtra",
+      },
+      {
+        "@type": "Country",
+        name: "India",
+      },
+    ],
     address: {
       "@type": "PostalAddress",
-      streetAddress: companyData.contact.address.building,
+      streetAddress: `${companyData.contact.address.building}, ${companyData.contact.address.street}`,
       addressLocality: companyData.contact.address.city,
       addressRegion: companyData.contact.address.state,
       postalCode: companyData.contact.address.pincode,
@@ -57,19 +83,63 @@ export function JsonLd({ type = "Organization", data }: JsonLdProps) {
       latitude: 18.559,
       longitude: 73.7868,
     },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:30",
-      closes: "18:30",
-    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        opens: "10:00",
+        closes: "18:00",
+      },
+    ],
   };
 
-  const schemaPayload = data
-    ? { "@context": "https://schema.org", "@type": type, ...data }
-    : type === "LocalBusiness"
-    ? localBusinessSchema
-    : defaultOrgSchema;
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${baseUrl}/#website`,
+    url: `${baseUrl}/`,
+    name: companyData.name,
+    alternateName: companyData.legalName,
+    description: companyData.subheadline,
+    publisher: {
+      "@id": `${baseUrl}/#organization`,
+    },
+    inLanguage: "en-US",
+  };
+
+  let schemaPayload: Record<string, any>;
+
+  if (data) {
+    schemaPayload = {
+      "@context": "https://schema.org",
+      "@type": type,
+      ...data,
+    };
+  } else if (type === "BreadcrumbList" && breadcrumbs && breadcrumbs.length > 0) {
+    schemaPayload = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: breadcrumbs.map((crumb, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: crumb.name,
+        item: crumb.url.startsWith("http") ? crumb.url : `${baseUrl}${crumb.url.startsWith("/") ? "" : "/"}${crumb.url}`,
+      })),
+    };
+  } else if (type === "LocalBusiness") {
+    schemaPayload = localBusinessSchema;
+  } else if (type === "WebSite") {
+    schemaPayload = webSiteSchema;
+  } else {
+    schemaPayload = defaultOrgSchema;
+  }
 
   return (
     <script

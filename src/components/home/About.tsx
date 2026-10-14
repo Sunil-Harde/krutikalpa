@@ -96,7 +96,7 @@ export function About() {
 
             <div className="pt-2">
               <Link
-                href="/about"
+                href="/about/"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-[#F97316] hover:text-[#FB923C] group transition-colors"
               >
                 <span>Read Full Company Story</span>

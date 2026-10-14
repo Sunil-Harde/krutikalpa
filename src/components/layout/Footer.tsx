@@ -174,7 +174,7 @@ export function Footer() {
 
             <div className="pt-2">
               <Link
-                href="/contact"
+                href="/contact/"
                 className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#FF6B0A] hover:text-[#E85D04] transition-colors"
               >
                 <span>Schedule a Technical Consultation</span>

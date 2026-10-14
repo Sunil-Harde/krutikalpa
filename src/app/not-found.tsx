@@ -28,7 +28,7 @@ export default function NotFound() {
             <span>Return to Homepage</span>
           </Link>
 
-          <Link href="/services" className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-full bg-zinc-100 dark:bg-[#1A1A1A] border border-[#D1D5DB] dark:border-[#262626] hover:border-[#FF6B0A]/40 text-[#171717] dark:text-zinc-200 text-xs font-semibold transition-all">
+          <Link href="/services/" className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-full bg-zinc-100 dark:bg-[#1A1A1A] border border-[#D1D5DB] dark:border-[#262626] hover:border-[#FF6B0A]/40 text-[#171717] dark:text-zinc-200 text-xs font-semibold transition-all">
             <span>Explore Services</span>
           </Link>
         </div>

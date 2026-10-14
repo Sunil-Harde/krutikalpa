@@ -195,6 +195,14 @@ export const technologiesData: TechItem[] = [
     description: "Ultra-fast in-memory caching and real-time state",
     iconSlug: "redis",
   },
+  {
+    name: "Amazon RDS",
+    category: "Database",
+    description:
+      "Managed relational databases with automated backups and scaling",
+    iconSlug: "rds",
+    badge: "AWS",
+  },
 
   // Cloud
   {
@@ -292,9 +300,7 @@ export function getTechnologyIcon(
 ): TechnologyIconData | null {
   const key = iconMap[iconSlug];
 
-  if (!key) {
-    return null;
-  }
+  if (!key) return null;
 
   const icons = SimpleIcons as unknown as Record<
     string,
@@ -303,9 +309,7 @@ export function getTechnologyIcon(
 
   const icon = icons[key];
 
-  if (!icon) {
-    return null;
-  }
+  if (!icon) return null;
 
   return {
     title: icon.title,

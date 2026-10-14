@@ -2,11 +2,26 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { FileText, ArrowLeft } from "lucide-react";
 import { companyData } from "@/data/company";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | KrutiKalpa Solutions",
+  title: "Terms of Service | Legal & Commercial Terms",
   description:
-    "Terms of Service governing the use of KrutiKalpa Solutions Private Limited websites, enterprise software development services, and AI solutions.",
+    "Terms of Service governing the use of KrutiKalpa Solutions Private Limited (CIN: U62020PN2025PTC238309) websites, software engineering engagements, and AI solutions.",
+  alternates: {
+    canonical: "https://krutikalpa.com/terms/",
+  },
+  openGraph: {
+    title: "Terms of Service | KrutiKalpa Solutions",
+    description:
+      "Enterprise engagement terms, intellectual property allocation, and service guidelines for KrutiKalpa Solutions.",
+    url: "https://krutikalpa.com/terms/",
+  },
+  twitter: {
+    card: "summary",
+    title: "Terms of Service | KrutiKalpa Solutions",
+    description: "Enterprise software services, MSA guidelines, and intellectual property ownership.",
+  },
 };
 
 export default function TermsPage() {
@@ -14,6 +29,13 @@ export default function TermsPage() {
 
   return (
     <div className="pb-20 bg-[#E5E7EB] dark:bg-[#080808] transition-colors duration-300">
+      <JsonLd
+        type="BreadcrumbList"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Terms of Service", url: "/terms/" },
+        ]}
+      />
       {/* Hero Header */}
       <section className="relative py-16 md:py-24 border-b border-[#D1D5DB] dark:border-[#262626] overflow-hidden bg-[#F1F3F5] dark:bg-[#0D0D0D]/60">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#FF6B0A]/10 rounded-full blur-[140px] pointer-events-none" />

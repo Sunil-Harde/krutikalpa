@@ -66,10 +66,12 @@ export function Navbar() {
             className="hidden lg:flex items-center bg-white/80 dark:bg-[#101010]/90 border border-zinc-300/80 dark:border-white/[0.08] rounded-full p-1.5 shadow-sm dark:shadow-lg backdrop-blur-md transition-colors"
           >
             {mainNavLinks.map((item) => {
+              const cleanPath = (pathname || "/").replace(/\/+$/, "") || "/";
+              const cleanHref = (item.href || "/").replace(/\/+$/, "") || "/";
               const isActive =
-                item.href === "/"
-                  ? pathname === "/"
-                  : pathname === item.href || pathname.startsWith(`${item.href}/`);
+                cleanHref === "/"
+                  ? cleanPath === "/"
+                  : cleanPath === cleanHref || cleanPath.startsWith(`${cleanHref}/`);
               return (
                 <Link
                   key={item.href}
@@ -124,10 +126,12 @@ export function Navbar() {
           >
             <nav aria-label="Mobile navigation" className="flex flex-col space-y-1">
               {mainNavLinks.map((item) => {
+                const cleanPath = (pathname || "/").replace(/\/+$/, "") || "/";
+                const cleanHref = (item.href || "/").replace(/\/+$/, "") || "/";
                 const isActive =
-                  item.href === "/"
-                    ? pathname === "/"
-                    : pathname === item.href || pathname.startsWith(`${item.href}/`);
+                  cleanHref === "/"
+                    ? cleanPath === "/"
+                    : cleanPath === cleanHref || cleanPath.startsWith(`${cleanHref}/`);
                 return (
                   <Link
                     key={item.href}

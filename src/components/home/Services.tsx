@@ -50,7 +50,7 @@ export function Services() {
           </div>
 
           <Link
-            href="/services"
+            href="/services/"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#F97316] hover:text-[#FB923C] group transition-colors"
           >
             <span>View All Services</span>
@@ -65,7 +65,7 @@ export function Services() {
             return (
               <Link
                 key={service.id}
-                href={`/services/${service.slug}`}
+                href={`/services/${service.slug}/`}
                 className="group relative bg-white dark:bg-[#101010] border border-[#D1D5DB] dark:border-[#262626] hover:border-[#FF6B0A]/50 rounded-2xl p-7 sm:p-8 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-[#FF6B0A]/10 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
               >
                 <div>

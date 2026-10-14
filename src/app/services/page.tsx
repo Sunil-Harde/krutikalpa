@@ -3,16 +3,67 @@ import { Sparkles } from "lucide-react";
 import { servicesData } from "@/data/services";
 import { CTA } from "@/components/home/CTA";
 import { ServicesGrid } from "@/components/services/ServicesGrid";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Services | High-Performance Engineering & AI Solutions",
+  title: "Software Engineering & AI Services",
   description:
-    "Explore KrutiKalpa's full suite of enterprise software services: Web Development, Web Apps, AI Agents, Chatbots, Mobile Apps, Custom ERP, and Cloud Infrastructure.",
+    "Explore KrutiKalpa's full suite of enterprise software services in Pune: Website Development, Web Applications, AI Agents, Chatbots, Mobile Apps, Custom ERP, and Cloud Infrastructure.",
+  alternates: {
+    canonical: "https://krutikalpa.com/services/",
+  },
+  openGraph: {
+    title: "Software Engineering & AI Services | KrutiKalpa Solutions",
+    description:
+      "Enterprise web apps, autonomous AI agents, chatbots, mobile applications, and bespoke ERP systems engineered in Pune, Maharashtra.",
+    url: "https://krutikalpa.com/services/",
+    images: [
+      {
+        url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
+        width: 1200,
+        height: 630,
+        alt: "KrutiKalpa Solutions - Engineering & AI Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Software & AI Development Services | KrutiKalpa Solutions",
+    description:
+      "High-performance website development, autonomous AI workflows, and custom enterprise software.",
+    images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
+  },
 };
 
 export default function ServicesPage() {
+  const serviceListSchema = {
+    itemListElement: servicesData.map((svc, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: svc.title,
+      url: `https://krutikalpa.com/services/${svc.slug}/`,
+      description: svc.shortDescription,
+    })),
+  };
+
   return (
     <div className="pt-28 pb-20 bg-[#E5E7EB] dark:bg-[#080808] transition-colors duration-300">
+      <JsonLd
+        type="BreadcrumbList"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+        ]}
+      />
+      <JsonLd
+        type="Service"
+        data={{
+          "@type": "ItemList",
+          name: "KrutiKalpa Solutions Engineering Services",
+          description: "Full suite of software engineering, web development, and AI solutions.",
+          ...serviceListSchema,
+        }}
+      />
       {/* Header */}
       <section className="relative py-16 md:py-24 border-b border-zinc-200 dark:border-white/[0.08] overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[320px] bg-[#FF6B0A]/10 rounded-full blur-[130px] pointer-events-none" />

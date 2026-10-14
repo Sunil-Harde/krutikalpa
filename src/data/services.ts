@@ -352,7 +352,7 @@ export const servicesData: ServiceItem[] = [
     slug: "erp-development",
     title: "ERP Development",
     image: "https://images.unsplash.com/photo-1669023414162-8b0573b9c6b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
-
+    imageAlt: "Enterprise Resource Planning ERP dashboard with inventory and financial analytics",
     shortDescription: "Integrated Enterprise Resource Planning platforms streamlining manufacturing, sales, and accounts.",
     heroTag: "Unified Business Operations",
     fullDescription:
@@ -405,8 +405,8 @@ export const servicesData: ServiceItem[] = [
     id: "cloud-solutions",
     slug: "cloud-solutions",
     title: "Cloud Solutions & DevOps",
-        image: "https://plus.unsplash.com/premium_photo-1700830193301-99e1c863ee38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
-
+    image: "https://plus.unsplash.com/premium_photo-1700830193301-99e1c863ee38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    imageAlt: "Cloud infrastructure architecture and DevOps deployment pipelines",
     shortDescription: "Resilient cloud infrastructure, auto-scaling clusters, and CI/CD automation on AWS & Azure.",
     heroTag: "Elastic Cloud Infrastructure",
     fullDescription:
@@ -459,8 +459,8 @@ export const servicesData: ServiceItem[] = [
     id: "it-consulting",
     slug: "it-consulting",
     title: "IT Consulting & Digital Strategy",
-            image: "https://plus.unsplash.com/premium_photo-1661762503491-815404e48a7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
-
+    image: "https://plus.unsplash.com/premium_photo-1661762503491-815404e48a7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    imageAlt: "Strategic technology advisory and enterprise architecture consulting session",
     shortDescription: "Strategic technical advisory, enterprise architecture planning, and digital transformation roadmaps.",
     heroTag: "Strategic Technology Advisory",
     fullDescription:

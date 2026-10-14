@@ -45,7 +45,7 @@ export function Industries() {
           </div>
 
           <Link
-            href="/industries"
+            href="/industries/"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#F97316] hover:text-[#FB923C] group transition-colors"
           >
             <span>View All Industries</span>
@@ -60,7 +60,7 @@ export function Industries() {
             return (
               <Link
                 key={ind.id}
-                href="/industries"
+                href={`/industries/#${ind.id}`}
                 className="group relative bg-white dark:bg-[#101010] border border-[#D1D5DB] dark:border-[#262626] hover:border-[#FF6B0A]/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-[#FF6B0A]/15 flex flex-col justify-between"
               >
                 {/* Image Thumbnail with Overlay */}

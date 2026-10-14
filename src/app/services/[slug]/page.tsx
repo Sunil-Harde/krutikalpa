@@ -52,16 +52,37 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const pageUrl = `https://krutikalpa.com/services/${service.slug}/`;
+  const imageUrl = service.image
+    ? service.image.startsWith("http")
+      ? service.image
+      : `https://krutikalpa.com${service.image}`
+    : "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png";
+
   return {
-    title: `${service.title} | KrutiKalpa Solutions`,
+    title: `${service.title} - Software Engineering & AI`,
     description: service.shortDescription,
     alternates: {
-      canonical: `https://krutikalpa.com/services/${service.slug}`,
+      canonical: pageUrl,
     },
     openGraph: {
-      title: `${service.title} - Enterprise Engineering`,
+      title: `${service.title} | Software Engineering & AI Solutions`,
       description: service.shortDescription,
-      url: `https://krutikalpa.com/services/${service.slug}`,
+      url: pageUrl,
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${service.title} - KrutiKalpa Solutions Pune`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.title} | KrutiKalpa Solutions`,
+      description: service.shortDescription,
+      images: [imageUrl],
     },
   };
 }
@@ -75,28 +96,57 @@ export default async function ServiceDetailPage({ params }: PageProps) {
   }
 
   const IconComponent = iconMap[service.iconName] || Code2;
+  const pageUrl = `https://krutikalpa.com/services/${service.slug}/`;
 
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: service.title,
+    url: pageUrl,
+    description: service.fullDescription,
+    serviceType: service.heroTag,
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Pune",
+      },
+      {
+        "@type": "Country",
+        name: "India",
+      },
+    ],
     provider: {
       "@type": "Organization",
       name: "KrutiKalpa Solutions Private Limited",
-      url: "https://krutikalpa.com",
+      url: "https://krutikalpa.com/",
+      telephone: "+91 6364917021",
+      email: "info@krutikalpa.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Kohinoor B-Zone, First floor, 106, Baner Main Road",
+        addressLocality: "Pune",
+        addressRegion: "Maharashtra",
+        postalCode: "411045",
+        addressCountry: "IN",
+      },
     },
-    description: service.fullDescription,
-    serviceType: service.heroTag,
-    areaServed: "IN",
   };
 
   return (
     <div className="pt-28 pb-20 bg-[#E5E7EB] dark:bg-[#080808] transition-colors duration-300">
+      <JsonLd
+        type="BreadcrumbList"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: service.title, url: `/services/${service.slug}/` },
+        ]}
+      />
       <JsonLd type="Service" data={serviceSchema} />
 
       {/* Breadcrumb Navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <nav className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
           <Link href="/" className="hover:text-zinc-900 dark:hover:text-white transition-colors">
             Home
           </Link>

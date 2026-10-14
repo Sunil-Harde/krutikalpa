@@ -80,10 +80,11 @@ export const companyData: CompanyInfo = {
     },
   },
   social: {
-    linkedin: "https://www.linkedin.com/company/krutikalpa-solutions",
-    twitter: "https://twitter.com/krutikalpa",
-    instagram: "https://www.instagram.com/krutikalpasolutions",
-    youtube: "https://www.youtube.com/@krutikalpasolutions",
-    github: "https://github.com/krutikalpa",
+    linkedin: "https://in.linkedin.com/company/spwhipl2kkspl",
+    twitter: "#",
+    instagram: "#",
+    youtube: "#",
+    github: "#",
+    // facebook: "https://www.facebook.com/people/Krutikalpa-Solutions-Pvt-Ltd/61582835206699/",
   },
 };

@@ -2,11 +2,26 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Shield, Sparkles, ArrowLeft, Mail, MapPin } from "lucide-react";
 import { companyData } from "@/data/company";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | KrutiKalpa Solutions",
+  title: "Privacy Policy | Data Protection & DPDP Compliance",
   description:
-    "Privacy Policy for KrutiKalpa Solutions Private Limited (CIN: U62020PN2025PTC238309). Learn how we collect, handle, and protect user data under Indian DPDP and global privacy frameworks.",
+    "Privacy Policy for KrutiKalpa Solutions Private Limited (CIN: U62020PN2025PTC238309). Learn how we collect, handle, and protect user data under India's DPDP Act, 2023.",
+  alternates: {
+    canonical: "https://krutikalpa.com/privacy-policy/",
+  },
+  openGraph: {
+    title: "Privacy Policy | KrutiKalpa Solutions",
+    description:
+      "Enterprise data protection policies, DPDP Act 2023 compliance, and user privacy commitments by KrutiKalpa Solutions.",
+    url: "https://krutikalpa.com/privacy-policy/",
+  },
+  twitter: {
+    card: "summary",
+    title: "Privacy Policy | KrutiKalpa Solutions",
+    description: "Corporate privacy practices, security protocols, and data protection guidelines.",
+  },
 };
 
 export default function PrivacyPolicyPage() {
@@ -14,6 +29,13 @@ export default function PrivacyPolicyPage() {
 
   return (
     <div className="pb-20 bg-[#E5E7EB] dark:bg-[#080808] transition-colors duration-300">
+      <JsonLd
+        type="BreadcrumbList"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Privacy Policy", url: "/privacy-policy/" },
+        ]}
+      />
       {/* Hero Header */}
       <section className="relative py-16 md:py-24 border-b border-[#D1D5DB] dark:border-[#262626] overflow-hidden bg-[#F1F3F5] dark:bg-[#0D0D0D]/60">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#FF6B0A]/10 rounded-full blur-[140px] pointer-events-none" />

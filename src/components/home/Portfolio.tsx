@@ -28,7 +28,7 @@ export function Portfolio() {
           </div>
 
           <Link
-            href="/portfolio"
+            href="/portfolio/"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#FF6B0A] hover:text-[#FF8C38] group transition-colors"
           >
             <span>View All Projects</span>
@@ -41,7 +41,7 @@ export function Portfolio() {
           {featured.map((project) => (
             <Link
               key={project.id}
-              href={`/portfolio#${project.slug}`}
+              href={`/portfolio/#${project.slug}`}
               className="group bg-white dark:bg-[#101010] border border-zinc-200 dark:border-white/[0.08] hover:border-[#FF6B0A]/50 rounded-2xl p-0 overflow-hidden shadow-sm dark:shadow-none transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-[#FF6B0A]/15 flex flex-col justify-between"
             >
               {/* Mockup Preview Area */}
