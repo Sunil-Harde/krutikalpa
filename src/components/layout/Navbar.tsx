@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
+
 import { usePathname } from "next/navigation";
 import { Menu, X, LogIn } from "lucide-react";
 import { mainNavLinks } from "@/data/navigation";
@@ -38,27 +40,39 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Brand Logo */}
-          <Link
-            href="/"
-            className="flex items-center gap-2.5 group focus:outline-none shrink-0"
-            aria-label="KrutiKalpa Solutions Home"
-          >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#FF6B0A] to-[#E85D04] p-[2px] shadow-lg shadow-[#FF6B0A]/25 group-hover:shadow-[#FF6B0A]/40 transition-shadow">
-              <div className="w-full h-full bg-[#0A0A0A] rounded-[10px] flex items-center justify-center">
-                <span className="font-extrabold text-[#FF6B0A] text-lg tracking-tighter">K</span>
-                <span className="font-extrabold text-white text-xs -ml-0.5">K</span>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center text-xl font-bold tracking-tight leading-none">
-                <span className="text-zinc-950 dark:text-white transition-colors">Kruti</span>
-                <span className="text-[#FF6B0A]">Kalpa</span>
-              </div>
-              <span className="text-xs tracking-wider text-zinc-600 dark:text-zinc-400 font-semibold uppercase mt-0.5 transition-colors">
-                Solutions
-              </span>
-            </div>
-          </Link>
+          
+<Link
+  href="/"
+  className="flex items-center gap-2.5 group focus:outline-none"
+  aria-label="KrutiKalpa Solutions Home"
+>
+  {/* Logo Image */}
+  <div className="relative w-10 h-10 shrink-0 overflow-hidden rounded-xl border-2 border-[#FF6B0A] bg-white shadow-lg shadow-[#FF6B0A]/25">
+    <Image
+      src="/images/logo/K_LOGO.jpeg"
+      alt="KrutiKalpa Solutions logo"
+      fill
+      priority
+      sizes="40px"
+      className="object-contain"
+    />
+  </div>
+
+  {/* Brand Name */}
+  <div className="flex flex-col">
+    <div className="flex items-center text-xl font-bold tracking-tight leading-none">
+      <span className="text-zinc-950 transition-colors dark:text-white">
+        Kruti
+      </span>
+      <span className="text-[#FF6B0A]">Kalpa</span>
+    </div>
+
+    <span className="mt-0.5 text-xs font-semibold uppercase tracking-wider text-zinc-600 transition-colors dark:text-zinc-400">
+      Solutions
+    </span>
+  </div>
+</Link>
+
 
           {/* Desktop Nav - Pill Style matching approved image */}
           <nav

@@ -2,6 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+
 import {
   MapPin,
   Mail,
@@ -27,27 +29,38 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
           {/* Column 1: Brand Info */}
           <div className="lg:col-span-4 space-y-5">
-            <Link
-              href="/"
-              className="flex items-center gap-2.5 group focus:outline-none"
-              aria-label="KrutiKalpa Solutions Home"
-            >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FF6B0A] to-[#E85D04] p-[2px] shadow-lg shadow-[#FF6B0A]/25">
-                <div className="w-full h-full bg-zinc-900 dark:bg-[#0A0A0A] rounded-[10px] flex items-center justify-center">
-                  <span className="font-extrabold text-[#FF6B0A] text-xl tracking-tighter">K</span>
-                  <span className="font-extrabold text-white text-xs -ml-0.5">K</span>
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <div className="flex items-center text-xl font-bold tracking-tight leading-none">
-                  <span className="text-zinc-950 dark:text-white transition-colors">Kruti</span>
-                  <span className="text-[#FF6B0A]">Kalpa</span>
-                </div>
-                <span className="text-xs tracking-wider text-zinc-600 dark:text-zinc-400 font-semibold uppercase mt-0.5 transition-colors">
-                  Solutions
-                </span>
-              </div>
-            </Link>
+            
+<Link
+  href="/"
+  className="flex items-center gap-2.5 group focus:outline-none"
+  aria-label="KrutiKalpa Solutions Home"
+>
+  {/* Logo Image */}
+  <div className="relative w-10 h-10 shrink-0 overflow-hidden rounded-xl border-2 border-[#FF6B0A] bg-white shadow-lg shadow-[#FF6B0A]/25">
+    <Image
+      src="/images/logo/K_LOGO.jpeg"
+      alt="KrutiKalpa Solutions logo"
+      fill
+      priority
+      sizes="40px"
+      className="object-contain"
+    />
+  </div>
+
+  {/* Brand Name */}
+  <div className="flex flex-col">
+    <div className="flex items-center text-xl font-bold tracking-tight leading-none">
+      <span className="text-zinc-950 transition-colors dark:text-white">
+        Kruti
+      </span>
+      <span className="text-[#FF6B0A]">Kalpa</span>
+    </div>
+
+    <span className="mt-0.5 text-xs font-semibold uppercase tracking-wider text-zinc-600 transition-colors dark:text-zinc-400">
+      Solutions
+    </span>
+  </div>
+</Link>
 
             <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-[15px] leading-relaxed max-w-sm">
               Turning ideas into digital solutions. We design, build and scale transformative web
@@ -195,10 +208,9 @@ export function Footer() {
         </div>
 
         {/* WardMitra Flagship Platform Showcase */}
-        <div className="mb-12 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-orange-500/10 via-zinc-100/80 dark:via-white/[0.03] to-orange-500/5 border border-[#FF6B0A]/20 dark:border-[#FF6B0A]/25 shadow-sm transition-all hover:border-[#FF6B0A]/40">
+        {/* <div className="mb-12 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-orange-500/10 via-zinc-100/80 dark:via-white/[0.03] to-orange-500/5 border border-[#FF6B0A]/20 dark:border-[#FF6B0A]/25 shadow-sm transition-all hover:border-[#FF6B0A]/40">
           <div className="flex flex-col md:flex-row items-center justify-between gap-5">
             <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-              {/* WardMitra Logo Emblem */}
               <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-2xl bg-zinc-950 border border-[#FF6B0A]/30 p-2.5 flex items-center justify-center shadow-lg shadow-[#FF6B0A]/15">
                 <svg viewBox="0 0 56 56" className="w-full h-full" fill="none" aria-hidden="true">
                   <path d="M14 34 C14 20 42 20 42 34" stroke="#FF6B0A" strokeWidth="3" strokeLinecap="round" fill="none" />
@@ -241,7 +253,7 @@ export function Footer() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-200 dark:border-white/[0.08] flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-zinc-500 dark:text-zinc-500">
