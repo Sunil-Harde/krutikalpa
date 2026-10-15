@@ -7,6 +7,7 @@ import {
   Mail,
   Phone,
   Linkedin,
+  Facebook,
   Twitter,
   Instagram,
   Youtube,
@@ -54,7 +55,7 @@ export function Footer() {
             </p>
 
             {/* Social Icons */}
-            <div className="flex items-center gap-3 pt-2">
+            <div className="flex items-center gap-3 pt-2 flex-wrap">
               <a
                 href={companyData.social.linkedin}
                 target="_blank"
@@ -63,6 +64,15 @@ export function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
+              </a>
+              <a
+                href={companyData.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-zinc-100 dark:bg-white/[0.05] border border-zinc-200 dark:border-white/[0.08] flex items-center justify-center text-zinc-700 dark:text-zinc-400 hover:text-white hover:bg-[#1877F2] hover:border-[#1877F2] dark:hover:text-[#1877F2] dark:hover:border-[#1877F2]/40 dark:hover:bg-white/[0.08] transition-all focus:outline-none focus:ring-2 focus:ring-[#1877F2]"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-4 h-4" />
               </a>
               <a
                 href={companyData.social.twitter}
@@ -184,9 +194,71 @@ export function Footer() {
           </div>
         </div>
 
+        {/* WardMitra Flagship Platform Showcase */}
+        <div className="mb-12 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-orange-500/10 via-zinc-100/80 dark:via-white/[0.03] to-orange-500/5 border border-[#FF6B0A]/20 dark:border-[#FF6B0A]/25 shadow-sm transition-all hover:border-[#FF6B0A]/40">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+            <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+              {/* WardMitra Logo Emblem */}
+              <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-2xl bg-zinc-950 border border-[#FF6B0A]/30 p-2.5 flex items-center justify-center shadow-lg shadow-[#FF6B0A]/15">
+                <svg viewBox="0 0 56 56" className="w-full h-full" fill="none" aria-hidden="true">
+                  <path d="M14 34 C14 20 42 20 42 34" stroke="#FF6B0A" strokeWidth="3" strokeLinecap="round" fill="none" />
+                  <path d="M19 34 C19 25 37 25 37 34" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+                  <circle cx="28" cy="18" r="4" fill="#FF6B0A" />
+                  <circle cx="18" cy="42" r="3" fill="#FFFFFF" opacity="0.9" />
+                  <circle cx="28" cy="45" r="3.5" fill="#FF6B0A" />
+                  <circle cx="38" cy="42" r="3" fill="#FFFFFF" opacity="0.9" />
+                  <line x1="28" y1="22" x2="28" y2="41" stroke="#FF6B0A" strokeWidth="2" />
+                  <line x1="18" y1="42" x2="28" y2="45" stroke="#FFFFFF" strokeWidth="1.5" opacity="0.7" />
+                  <line x1="38" y1="42" x2="28" y2="45" stroke="#FFFFFF" strokeWidth="1.5" opacity="0.7" />
+                </svg>
+              </div>
+
+              <div>
+                <div className="flex items-center justify-center sm:justify-start gap-2.5 flex-wrap">
+                  <span className="text-lg sm:text-xl font-bold tracking-tight text-zinc-950 dark:text-white">
+                    Ward<span className="text-[#FF6B0A]">Mitra</span>
+                  </span>
+                  <span className="text-[11px] font-semibold tracking-wide uppercase px-2.5 py-0.5 rounded-full bg-[#FF6B0A]/15 text-[#FF6B0A] border border-[#FF6B0A]/20">
+                    Flagship Civic AI
+                  </span>
+                </div>
+                <p className="text-sm text-zinc-700 dark:text-zinc-300 mt-1 font-medium">
+                  WardMitra developed by <span className="text-[#FF6B0A] font-bold">KrutiKalpa Solutions Pvt. Ltd.</span>
+                </p>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  AI-powered civic grievance redressal, multilingual NLP, and municipal administration platform.
+                </p>
+              </div>
+            </div>
+
+            <div className="shrink-0 flex items-center gap-3">
+              <Link
+                href="/portfolio/#wardmitra-digital-governance"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#FF6B0A] hover:bg-[#E85D04] text-white text-xs sm:text-sm font-semibold transition-all shadow-md shadow-[#FF6B0A]/20 hover:shadow-lg hover:shadow-[#FF6B0A]/30 focus:outline-none focus:ring-2 focus:ring-[#FF6B0A]"
+              >
+                <span>Explore WardMitra</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-zinc-200 dark:border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-zinc-500 dark:text-zinc-500">
-          <p>© 2026 KrutiKalpa Solutions. All rights reserved.</p>
+        <div className="pt-8 border-t border-zinc-200 dark:border-white/[0.08] flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-zinc-500 dark:text-zinc-500">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+            <p>© 2026 KrutiKalpa Solutions Pvt. Ltd. All rights reserved.</p>
+            <span className="hidden sm:inline text-zinc-300 dark:text-zinc-700">•</span>
+            <p className="flex items-center gap-1.5 font-medium text-zinc-700 dark:text-zinc-300">
+              <Link
+                href="/portfolio/#wardmitra-digital-governance"
+                className="text-[#FF6B0A] hover:underline font-semibold"
+              >
+                WardMitra
+              </Link>
+              <span className="text-zinc-400 dark:text-zinc-500 font-normal">developed by</span>
+              <span className="font-semibold text-zinc-900 dark:text-white">KrutiKalpa Solutions Pvt. Ltd.</span>
+            </p>
+          </div>
           <div className="flex items-center gap-6">
             {legalLinks.map((item) => (
               <Link

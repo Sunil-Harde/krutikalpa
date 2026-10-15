@@ -38,6 +38,7 @@ export interface CompanyInfo {
     instagram: string;
     youtube: string;
     github: string;
+    facebook: string;
   };
 }
 
@@ -85,6 +86,6 @@ export const companyData: CompanyInfo = {
     instagram: "#",
     youtube: "#",
     github: "#",
-    // facebook: "https://www.facebook.com/people/Krutikalpa-Solutions-Pvt-Ltd/61582835206699/",
+    facebook: "https://www.facebook.com/people/Krutikalpa-Solutions-Pvt-Ltd/61582835206699/",
   },
 };

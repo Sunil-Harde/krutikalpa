@@ -36,6 +36,7 @@ export function JsonLd({ type = "Organization", data, breadcrumbs }: JsonLdProps
     },
     sameAs: [
       companyData.social.linkedin,
+      companyData.social.facebook,
       companyData.social.twitter,
       companyData.social.instagram,
       companyData.social.youtube,
