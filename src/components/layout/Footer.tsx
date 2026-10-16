@@ -89,7 +89,7 @@ export function Footer() {
                 <Facebook className="h-4 w-4" />
               </a>
 
-              <a
+              {/* <a
                 href={companyData.social.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -97,9 +97,9 @@ export function Footer() {
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-600 transition-all hover:border-[#FF6B0A] hover:bg-[#FF6B0A] hover:text-white dark:border-white/[0.08] dark:bg-white/[0.04] dark:text-zinc-400 dark:hover:border-[#FF6B0A] dark:hover:bg-[#FF6B0A] dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF6B0A]"
               >
                 <Twitter className="h-4 w-4" />
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 href={companyData.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -107,9 +107,9 @@ export function Footer() {
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-600 transition-all hover:border-[#FF6B0A] hover:bg-[#FF6B0A] hover:text-white dark:border-white/[0.08] dark:bg-white/[0.04] dark:text-zinc-400 dark:hover:border-[#FF6B0A] dark:hover:bg-[#FF6B0A] dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF6B0A]"
               >
                 <Instagram className="h-4 w-4" />
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 href={companyData.social.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -117,7 +117,7 @@ export function Footer() {
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-600 transition-all hover:border-[#FF6B0A] hover:bg-[#FF6B0A] hover:text-white dark:border-white/[0.08] dark:bg-white/[0.04] dark:text-zinc-400 dark:hover:border-[#FF6B0A] dark:hover:bg-[#FF6B0A] dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF6B0A]"
               >
                 <Youtube className="h-4 w-4" />
-              </a>
+              </a> */}
             </div>
 
             {/* Company CIN */}
