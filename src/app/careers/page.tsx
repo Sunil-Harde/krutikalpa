@@ -19,6 +19,7 @@ import { careerOpenings } from "@/data/careers";
 import { companyData } from "@/data/company";
 import { CTA } from "@/components/home/CTA";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
   title: "Careers | Engineering & AI Opportunities in Pune",
@@ -100,46 +101,31 @@ export default function CareersPage() {
         ]}
       />
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 border-b border-[#D1D5DB] dark:border-[#262626] overflow-hidden bg-[#F1F3F5] dark:bg-[#0D0D0D]/60">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#FF6B0A]/10 rounded-full blur-[140px] pointer-events-none" />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/60 dark:bg-white/[0.04] border border-[#FF6B0A]/30 mb-6">
-            <Sparkles className="w-4 h-4 text-[#FF6B0A]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#FF6B0A]">
-              JOIN OUR ENGINEERING TEAM
-            </span>
-          </div>
-
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#171717] dark:text-[#FAFAFA] tracking-tight max-w-4xl mx-auto leading-tight">
+      <PageHero
+        badgeText="JOIN OUR ENGINEERING TEAM"
+        title={
+          <>
             Build The Future of Enterprise &{" "}
-            <span className="text-[#FF6B0A]">AI Solutions</span>
-          </h1>
-
-          <p className="mt-6 text-base sm:text-lg text-[#52525B] dark:text-[#A1A1AA] max-w-3xl mx-auto leading-relaxed">
-            At KrutiKalpa Solutions, we solve complex engineering challenges for enterprises,
-            healthcare providers, and governance ecosystems. Explore our open positions and create
-            lasting value with us in Baner, Pune.
-          </p>
-
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="#openings"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#FF6B0A] hover:bg-[#E85D04] text-white font-semibold text-sm shadow-lg shadow-[#FF6B0A]/25 transition-all"
-            >
-              View Open Roles
-              <ArrowRight className="w-4 h-4" />
-            </a>
-            <a
-              href={`mailto:${companyData.contact.email}?subject=General%20Career%20Inquiry%20-%20KrutiKalpa`}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white dark:bg-[#101010] border border-[#D1D5DB] dark:border-[#262626] hover:border-[#FF6B0A]/40 text-[#171717] dark:text-[#FAFAFA] font-semibold text-sm transition-all"
-            >
-              Send Open Resume
-              <Mail className="w-4 h-4 text-[#52525B] dark:text-[#A1A1AA]" />
-            </a>
-          </div>
-        </div>
-      </section>
+            <span className="text-gradient-orange-pure">AI Solutions</span>
+          </>
+        }
+        description="At KrutiKalpa Solutions, we solve complex engineering challenges for enterprises, healthcare providers, and governance ecosystems. Explore our open positions and create lasting value with us in Baner, Pune."
+      >
+        <a
+          href="#openings"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#FF6B0A] hover:bg-[#E85D04] text-white font-semibold text-sm shadow-lg shadow-[#FF6B0A]/25 transition-all"
+        >
+          View Open Roles
+          <ArrowRight className="w-4 h-4" />
+        </a>
+        <a
+          href={`mailto:${companyData.contact.email}?subject=General%20Career%20Inquiry%20-%20KrutiKalpa`}
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white dark:bg-[#101010] border border-[#D1D5DB] dark:border-[#262626] hover:border-[#FF6B0A]/40 text-[#171717] dark:text-[#FAFAFA] font-semibold text-sm transition-all shadow-sm"
+        >
+          Send Open Resume
+          <Mail className="w-4 h-4 text-[#52525B] dark:text-[#A1A1AA]" />
+        </a>
+      </PageHero>
 
       {/* Perks / Culture Grid */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

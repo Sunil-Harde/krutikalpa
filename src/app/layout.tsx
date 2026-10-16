@@ -94,7 +94,7 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          href="/images/logo/K_LOGO.jpeg"
+          href="/images/logo/K_LOGO.png"
           type="image/jpeg"
         />
         <script

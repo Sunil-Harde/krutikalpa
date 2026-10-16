@@ -36,9 +36,9 @@ export function Footer() {
   aria-label="KrutiKalpa Solutions Home"
 >
   {/* Logo Image */}
-  <div className="relative w-10 h-10 shrink-0 overflow-hidden rounded-xl border-2 border-[#FF6B0A] bg-white shadow-lg shadow-[#FF6B0A]/25">
+  <div className="relative w-10 h-10 shrink-0 overflow-hidden ">
     <Image
-      src="/images/logo/K_LOGO.jpeg"
+      src="/images/logo/K_LOGO.png"
       alt="KrutiKalpa Solutions logo"
       fill
       priority

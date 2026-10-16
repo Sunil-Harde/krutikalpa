@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Shield, Sparkles, ArrowLeft, Mail, MapPin } from "lucide-react";
 import { companyData } from "@/data/company";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Data Protection & DPDP Compliance",
@@ -37,26 +38,12 @@ export default function PrivacyPolicyPage() {
         ]}
       />
       {/* Hero Header */}
-      <section className="relative py-16 md:py-24 border-b border-[#D1D5DB] dark:border-[#262626] overflow-hidden bg-[#F1F3F5] dark:bg-[#0D0D0D]/60">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#FF6B0A]/10 rounded-full blur-[140px] pointer-events-none" />
-
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/60 dark:bg-white/[0.04] border border-[#FF6B0A]/30 mb-6">
-            <Shield className="w-4 h-4 text-[#FF6B0A]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#FF6B0A]">
-              LEGAL & DATA PROTECTION
-            </span>
-          </div>
-
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#171717] dark:text-[#FAFAFA] tracking-tight leading-tight">
-            Privacy Policy
-          </h1>
-
-          <p className="mt-4 text-sm sm:text-base text-[#52525B] dark:text-[#A1A1AA]">
-            Last Updated: {lastUpdated} &bull; Effective Immediately
-          </p>
-        </div>
-      </section>
+      <PageHero
+        badgeIcon={Shield}
+        badgeText="LEGAL & DATA PROTECTION"
+        title="Privacy Policy"
+        description={`Last Updated: ${lastUpdated} • Effective Immediately`}
+      />
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

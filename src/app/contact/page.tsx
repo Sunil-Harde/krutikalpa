@@ -13,6 +13,7 @@ import {
 import { companyData } from "@/data/company";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
   title: "Contact Us - Baner, Pune Headquarters & Inquiries",
@@ -62,28 +63,16 @@ export default function ContactPage() {
         ]}
       />
       {/* Hero Header */}
-      <section className="relative py-16 md:py-24 border-b border-[#D1D5DB] dark:border-[#262626] overflow-hidden bg-[#F1F3F5] dark:bg-[#0D0D0D]/60">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#FF6B0A]/10 rounded-full blur-[140px] pointer-events-none" />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/60 dark:bg-white/[0.04] border border-[#FF6B0A]/30 mb-6">
-            <Sparkles className="w-4 h-4 text-[#FF6B0A]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#FF6B0A]">
-              GET IN TOUCH
-            </span>
-          </div>
-
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#171717] dark:text-[#FAFAFA] tracking-tight max-w-4xl mx-auto leading-tight">
+      <PageHero
+        badgeText="GET IN TOUCH"
+        title={
+          <>
             Let&apos;s Build Your Next Digital{" "}
-            <span className="text-[#FF6B0A]">Breakthrough</span>
-          </h1>
-
-          <p className="mt-6 text-base sm:text-lg text-[#52525B] dark:text-[#A1A1AA] max-w-3xl mx-auto leading-relaxed">
-            Whether you need a cutting-edge web application, autonomous AI agents, enterprise cloud
-            modernization, or custom software architecture, our team is ready to collaborate.
-          </p>
-        </div>
-      </section>
+            <span className="text-gradient-orange-pure">Breakthrough</span>
+          </>
+        }
+        description="Whether you need a cutting-edge web application, autonomous AI agents, enterprise cloud modernization, or custom software architecture, our team is ready to collaborate."
+      />
 
       {/* Main Grid: Info + Contact Form */}
       <section className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
