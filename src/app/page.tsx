@@ -70,7 +70,7 @@ export default function HomePage() {
       <WhyChooseUs />
 
       {/* 9. Testimonials Section (Dark) */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* 10. CTA Section (Dark) */}
       <CTA />
