@@ -16,23 +16,23 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Baner, Pune Headquarters & Inquiries",
+  title: "Contact KrutiKalpa Solutions | Pune Office",
   description:
-    "Get in touch with KrutiKalpa Solutions Private Limited. Visit our headquarters at Kohinoor B-Zone, Baner, Pune, call +91 6364917021, or email info@krutikalpa.com for software & AI proposals.",
+    "Contact KrutiKalpa Solutions in Baner, Pune. Call +91 6364917021, email info@krutikalpa.com, or fill out our inquiry form to discuss your software or AI project.",
   alternates: {
     canonical: "https://krutikalpa.com/contact/",
   },
   openGraph: {
-    title: "Contact KrutiKalpa Solutions | Pune Office & Inquiries",
+    title: "Contact KrutiKalpa Solutions | Pune Office",
     description:
-      "Schedule a consultation with our senior technology team. Reach our Baner, Pune headquarters for software, AI, and enterprise inquiries.",
+      "Reach our team in Baner, Pune to discuss website development, web apps, AI agents, chatbots, or any custom software project. We respond within 24 hours.",
     url: "https://krutikalpa.com/contact/",
     images: [
       {
         url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
         width: 1200,
         height: 630,
-        alt: "KrutiKalpa Solutions Corporate Headquarters - Baner, Pune",
+        alt: "KrutiKalpa Solutions Office — Baner, Pune",
       },
     ],
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact KrutiKalpa Solutions | Pune, Maharashtra",
     description:
-      "Direct discussions with senior engineering architects. Response within 24 business hours.",
+      "Get in touch with our team in Pune for software, AI and web development inquiries.",
     images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
   },
 };

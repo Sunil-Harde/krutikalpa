@@ -59,14 +59,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       : `https://krutikalpa.com${service.image}`
     : "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png";
 
+  // Build a concise but informative description from the service data
+  const metaDescription = `${service.shortDescription} KrutiKalpa Solutions offers ${service.title.toLowerCase()} services in Pune, India.`;
+
   return {
-    title: `${service.title} - Software Engineering & AI`,
-    description: service.shortDescription,
+    title: service.title,
+    description: metaDescription,
     alternates: {
       canonical: pageUrl,
     },
     openGraph: {
-      title: `${service.title} | Software Engineering & AI Solutions`,
+      title: `${service.title} | KrutiKalpa Solutions`,
       description: service.shortDescription,
       url: pageUrl,
       images: [
@@ -74,7 +77,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: `${service.title} - KrutiKalpa Solutions Pune`,
+          alt: `${service.title} by KrutiKalpa Solutions, Pune`,
         },
       ],
     },
@@ -151,7 +154,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             Home
           </Link>
           <ChevronRight className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-600" />
-          <Link href="/services" className="hover:text-zinc-900 dark:hover:text-white transition-colors">
+          <Link href="/services/" className="hover:text-zinc-900 dark:hover:text-white transition-colors">
             Services
           </Link>
           <ChevronRight className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-600" />
@@ -181,7 +184,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/contact" className="btn-orange-gradient text-sm px-7 py-3">
+              <Link href="/contact/" className="btn-orange-gradient text-sm px-7 py-3">
                 <span>Request Project Proposal</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>

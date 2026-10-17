@@ -6,22 +6,22 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Data Protection & DPDP Compliance",
+  title: "Privacy Policy | KrutiKalpa Solutions",
   description:
-    "Privacy Policy for KrutiKalpa Solutions Private Limited (CIN: U62020PN2025PTC238309). Learn how we collect, handle, and protect user data under India's DPDP Act, 2023.",
+    "Read the Privacy Policy for KrutiKalpa Solutions. Learn how we collect, use, and protect personal data in compliance with India's DPDP Act, 2023.",
   alternates: {
     canonical: "https://krutikalpa.com/privacy-policy/",
   },
   openGraph: {
     title: "Privacy Policy | KrutiKalpa Solutions",
     description:
-      "Enterprise data protection policies, DPDP Act 2023 compliance, and user privacy commitments by KrutiKalpa Solutions.",
+      "How KrutiKalpa Solutions handles and protects user data, in compliance with the DPDP Act, 2023.",
     url: "https://krutikalpa.com/privacy-policy/",
   },
   twitter: {
     card: "summary",
     title: "Privacy Policy | KrutiKalpa Solutions",
-    description: "Corporate privacy practices, security protocols, and data protection guidelines.",
+    description: "KrutiKalpa Solutions' data protection and privacy policy under India's DPDP Act, 2023.",
   },
 };
 
@@ -194,7 +194,7 @@ export default function PrivacyPolicyPage() {
               Return to Home
             </Link>
             <Link
-              href="/terms"
+              href="/terms/"
               className="text-sm text-[#52525B] dark:text-zinc-400 hover:text-[#171717] dark:hover:text-white transition-colors"
             >
               Terms of Service &rarr;

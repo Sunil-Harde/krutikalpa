@@ -21,23 +21,23 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
-  title: "About Us - Technology Vision & Leadership",
+  title: "About KrutiKalpa Solutions | Our Story & Mission",
   description:
-    "Learn about KrutiKalpa Solutions Private Limited (CIN: U62020PN2025PTC238309) in Pune, Maharashtra. Discover our mission, values, engineering standards, and national digital platform track record.",
+    "KrutiKalpa Solutions Private Limited is a technology company in Baner, Pune. Learn about our mission, values, team, and track record across digital and public sector projects.",
   alternates: {
     canonical: "https://krutikalpa.com/about/",
   },
   openGraph: {
-    title: "About KrutiKalpa Solutions | Engineering Leadership & Track Record",
+    title: "About KrutiKalpa Solutions | Our Story & Mission",
     description:
-      "Indian technology engineering company based in Pune, Maharashtra. Discover our decade-long track record, ISO standards alignment, and proprietary civic AI platforms.",
+      "Discover KrutiKalpa Solutions — a software and AI company based in Pune. Learn about our engineering approach, company values, and national-scale project track record.",
     url: "https://krutikalpa.com/about/",
     images: [
       {
         url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
         width: 1200,
         height: 630,
-        alt: "About KrutiKalpa Solutions - Pune Corporate Headquarters",
+        alt: "About KrutiKalpa Solutions — Pune Office",
       },
     ],
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About KrutiKalpa Solutions | Pune, India",
     description:
-      "Enterprise software, AI automation, and large-scale public initiatives engineered by KrutiKalpa Solutions.",
+      "Software and AI company in Pune. Learn about our mission, values and engineering track record.",
     images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
   },
 };

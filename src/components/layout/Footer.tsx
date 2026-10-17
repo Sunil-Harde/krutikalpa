@@ -240,12 +240,22 @@ export function Footer() {
             </p>
 
             {/* WardMitra Attribution */}
-            <p className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-center text-[11px] sm:text-xs leading-5 text-zinc-600 dark:text-zinc-400">
+            <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center text-[11px] sm:text-xs leading-5 text-zinc-600 dark:text-zinc-400">
               <Link
                 href="/portfolio/#wardmitra-digital-governance"
-                className="font-semibold text-[#FF6B0A] hover:underline"
+                className="inline-flex items-center gap-1.5 font-semibold text-[#FF6B0A] hover:underline"
+                aria-label="WardMitra developed by KrutiKalpa Solutions"
               >
-                WardMitra
+                <span className="relative inline-flex items-center justify-center w-5 h-5 rounded bg-[#0F172A] p-0.5 border border-zinc-700/40">
+                  <Image
+                    src="/images/wardmitra-logo.svg"
+                    alt="WardMitra"
+                    width={16}
+                    height={16}
+                    className="object-contain"
+                  />
+                </span>
+                <span>WardMitra</span>
               </Link>
 
               <span>developed by</span>
@@ -253,7 +263,7 @@ export function Footer() {
               <span className="font-semibold text-zinc-800 dark:text-white">
                 KrutiKalpa Solutions Pvt. Ltd.
               </span>
-            </p>
+            </div>
 
             {/* Legal Links */}
             <nav

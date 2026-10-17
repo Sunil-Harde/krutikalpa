@@ -12,32 +12,32 @@ import { CTA } from "@/components/home/CTA";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "KrutiKalpa Solutions | Premier Software & AI Development Company in Pune",
+    absolute: "KrutiKalpa Solutions | Software & AI Development in Pune",
   },
   description:
-    "KrutiKalpa Solutions Private Limited is a technology engineering company in Baner, Pune. We engineer high-performance websites, scalable web applications, autonomous AI agents, chatbots, and custom software.",
+    "KrutiKalpa Solutions builds custom software, web applications, AI agents and chatbots for businesses in Pune. Explore our technology services and solutions.",
   alternates: {
     canonical: "https://krutikalpa.com/",
   },
   openGraph: {
-    title: "KrutiKalpa Solutions | Premier Software & AI Development Company in Pune",
+    title: "KrutiKalpa Solutions | Software & AI Development in Pune",
     description:
-      "Transforming businesses through technology: enterprise websites, web applications, AI agents, chatbots, and custom software in Pune, Maharashtra.",
+      "Custom software, web applications, AI agents, chatbots and website development by KrutiKalpa Solutions — a technology company based in Pune, Maharashtra.",
     url: "https://krutikalpa.com/",
     images: [
       {
         url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
         width: 1200,
         height: 630,
-        alt: "KrutiKalpa Solutions Pune Corporate Headquarters and Engineering Team",
+        alt: "KrutiKalpa Solutions — Software & AI Development Company in Pune",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "KrutiKalpa Solutions | Software Development Company in Pune",
+    title: "KrutiKalpa Solutions | Software & AI Development in Pune",
     description:
-      "Custom software, autonomous AI agents, chatbots, and high-performance web applications built for scale.",
+      "Custom software, web applications, AI agents and chatbots built by KrutiKalpa Solutions in Pune, India.",
     images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
   },
 };

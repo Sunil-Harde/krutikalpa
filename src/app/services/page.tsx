@@ -6,31 +6,31 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
-  title: "Software Engineering & AI Services",
+  title: "Software & AI Development Services",
   description:
-    "Explore KrutiKalpa's full suite of enterprise software services in Pune: Website Development, Web Applications, AI Agents, Chatbots, Mobile Apps, Custom ERP, and Cloud Infrastructure.",
+    "Explore KrutiKalpa Solutions' services: website development, web applications, AI agents, chatbot development, mobile apps, and custom software — built in Pune, India.",
   alternates: {
     canonical: "https://krutikalpa.com/services/",
   },
   openGraph: {
-    title: "Software Engineering & AI Services | KrutiKalpa Solutions",
+    title: "Software & AI Development Services | KrutiKalpa Solutions",
     description:
-      "Enterprise web apps, autonomous AI agents, chatbots, mobile applications, and bespoke ERP systems engineered in Pune, Maharashtra.",
+      "End-to-end software services including web development, AI agents, chatbots, mobile apps, and custom enterprise software by KrutiKalpa Solutions in Pune.",
     url: "https://krutikalpa.com/services/",
     images: [
       {
         url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
         width: 1200,
         height: 630,
-        alt: "KrutiKalpa Solutions - Engineering & AI Services",
+        alt: "KrutiKalpa Solutions — Software & AI Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Software & AI Development Services | KrutiKalpa Solutions",
+    title: "Software & AI Services | KrutiKalpa Solutions",
     description:
-      "High-performance website development, autonomous AI workflows, and custom enterprise software.",
+      "Website development, web apps, AI agents, chatbots, mobile apps and custom software by KrutiKalpa Solutions.",
     images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
   },
 };

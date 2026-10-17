@@ -16,21 +16,20 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://krutikalpa.com"),
   title: {
-    default: "KrutiKalpa Solutions | Software Development & AI Solutions in Pune",
+    default: "KrutiKalpa Solutions | Software & AI Development in Pune",
     template: "%s | KrutiKalpa Solutions",
   },
   description:
-    "KrutiKalpa Solutions is a technology engineering company based in Pune, Maharashtra. We design and build enterprise websites, scalable web applications, autonomous AI agents, chatbots, and custom software solutions.",
+    "KrutiKalpa Solutions is a software and AI development company in Pune, India. We build websites, web apps, AI agents, chatbots, and custom software for businesses.",
   keywords: [
     "KrutiKalpa Solutions",
     "Software Development Company in Pune",
     "Web Development Company in Pune",
-    "AI Agent Development Company",
-    "Enterprise Web Applications",
-    "Chatbot Development Services",
+    "AI Agent Development",
+    "Chatbot Development",
     "Custom Software Development Pune",
-    "ERP Development",
-    "Digital Governance Systems",
+    "Web Application Development",
+    "Mobile App Development Pune",
     "IT Services Pune Maharashtra",
   ],
   authors: [{ name: "KrutiKalpa Solutions Private Limited", url: "https://krutikalpa.com" }],
@@ -49,23 +48,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://krutikalpa.com/",
     siteName: "KrutiKalpa Solutions",
-    title: "KrutiKalpa Solutions | Software Development & AI Solutions in Pune",
+    title: "KrutiKalpa Solutions | Software & AI Development in Pune",
     description:
-      "Transforming businesses through technology: enterprise websites, web applications, AI agents, chatbots, and custom software engineering.",
+      "Custom software, web applications, AI agents and chatbots built by KrutiKalpa Solutions in Pune, Maharashtra, India.",
     images: [
       {
         url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
         width: 1200,
         height: 630,
-        alt: "KrutiKalpa Solutions - Software Engineering and AI Solutions in Pune",
+        alt: "KrutiKalpa Solutions — Software & AI Development Company in Pune",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "KrutiKalpa Solutions | Software Development & AI Solutions in Pune",
+    title: "KrutiKalpa Solutions | Software & AI Development in Pune",
     description:
-      "Software engineering and AI company in Pune, India delivering Websites, Web Apps, AI Agents, Chatbots, and Custom Software.",
+      "Software and AI company in Pune, India delivering websites, web apps, AI agents, chatbots and custom software.",
     creator: "@krutikalpa",
     images: [
       "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
@@ -95,7 +94,7 @@ export default function RootLayout({
         <link
           rel="icon"
           href="/images/logo/K_LOGO.png"
-          type="image/jpeg"
+          type="image/png"
         />
         <script
           dangerouslySetInnerHTML={{

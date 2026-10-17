@@ -5,31 +5,31 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Delivered Software Systems & Projects",
+  title: "Portfolio | Delivered Software Projects",
   description:
-    "Explore KrutiKalpa Solutions' track record of delivered software: Inventory ERP, B2B wholesale platforms, AI assistants, WardMitra, Field Assist, and national health claim audit suites.",
+    "Explore software projects delivered by KrutiKalpa Solutions — including inventory ERP systems, B2B platforms, AI assistants, WardMitra governance app, and healthcare tools.",
   alternates: {
     canonical: "https://krutikalpa.com/portfolio/",
   },
   openGraph: {
-    title: "Enterprise Software & AI Portfolio | KrutiKalpa Solutions",
+    title: "Portfolio | Delivered Software Projects | KrutiKalpa Solutions",
     description:
-      "Explore delivered client projects: custom ERPs, autonomous AI agents, field workforce mobile apps, and governance platforms.",
+      "See our delivered projects: custom ERP systems, AI agents, field mobile apps, governance platforms, and web applications built for real clients.",
     url: "https://krutikalpa.com/portfolio/",
     images: [
       {
         url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
         width: 1200,
         height: 630,
-        alt: "KrutiKalpa Solutions Client Portfolio & Case Studies",
+        alt: "KrutiKalpa Solutions Client Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio & Case Studies | KrutiKalpa Solutions",
+    title: "Portfolio | KrutiKalpa Solutions",
     description:
-      "Proven enterprise systems, AI automations, and custom software delivered for real business impact.",
+      "Enterprise ERP, AI automation, governance apps and web platforms delivered by KrutiKalpa Solutions.",
     images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
   },
 };

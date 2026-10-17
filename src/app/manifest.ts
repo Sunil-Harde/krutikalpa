@@ -7,16 +7,17 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "KrutiKalpa Solutions",
     short_name: "KrutiKalpa",
     description:
-      "Transforming Businesses Through Technology. Web applications, AI agents, chatbots and custom software solutions.",
+      "Custom software, web applications, AI agents and chatbots by KrutiKalpa Solutions \u2014 Pune, India.",
     start_url: "/",
     display: "standalone",
     background_color: "#080808",
     theme_color: "#FF6B0A",
     icons: [
       {
-        src: "/favicon.ico",
-        sizes: "any",
-        type:  "image/x-icon",
+        src: "/images/logo/K_LOGO.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable" as const,
       },
     ],
   };

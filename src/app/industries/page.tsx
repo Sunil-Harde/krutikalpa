@@ -18,16 +18,16 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
-  title: "Industries | Domain Software Solutions for Manufacturing, Healthcare & Retail",
+  title: "Industries We Serve | KrutiKalpa Solutions",
   description:
-    "Discover how KrutiKalpa Solutions delivers tailored software, AI automation, and cloud systems for Manufacturing, Healthcare, Retail & E-commerce, Real Estate, and Automotive sectors.",
+    "KrutiKalpa Solutions delivers tailored software and AI solutions for Manufacturing, Healthcare, Retail & E-commerce, Real Estate, Logistics, and Automotive businesses.",
   alternates: {
     canonical: "https://krutikalpa.com/industries/",
   },
   openGraph: {
-    title: "Industries We Transform | KrutiKalpa Solutions",
+    title: "Industries We Serve | KrutiKalpa Solutions",
     description:
-      "Enterprise digital architectures engineered for Manufacturing, Healthcare, Retail & E-commerce, Real Estate, Logistics, and Automotive.",
+      "Domain-specific software, AI automation, and cloud systems built for Manufacturing, Healthcare, Retail, Real Estate, Logistics, and Automotive sectors.",
     url: "https://krutikalpa.com/industries/",
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Industries We Serve | KrutiKalpa Solutions",
     description:
-      "Domain-specific software architectures engineered for critical operational, regulatory, and growth challenges.",
+      "Software and AI solutions for Manufacturing, Healthcare, Retail, Real Estate, Logistics and Automotive.",
     images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
   },
 };
@@ -173,7 +173,7 @@ export default function IndustriesPage() {
 
                   <div className="pt-2 flex items-center justify-between">
                     <Link
-                      href="/contact"
+                      href="/contact/"
                       className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#FF6B0A] hover:text-[#FF8C38] transition-colors"
                     >
                       <span>Discuss Your Industry Solution</span>

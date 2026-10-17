@@ -15,6 +15,16 @@ interface JsonLdProps {
 export function JsonLd({ type = "Organization", data, breadcrumbs }: JsonLdProps) {
   const baseUrl = "https://krutikalpa.com";
 
+  // Filter out placeholder '#' social links so sameAs only contains real URLs
+  const validSocialLinks = [
+    companyData.social.linkedin,
+    companyData.social.facebook,
+    companyData.social.twitter,
+    companyData.social.instagram,
+    companyData.social.youtube,
+    companyData.social.github,
+  ].filter((link) => link && link !== "#");
+
   const defaultOrgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -22,7 +32,12 @@ export function JsonLd({ type = "Organization", data, breadcrumbs }: JsonLdProps
     name: companyData.name,
     legalName: companyData.legalName,
     url: `${baseUrl}/`,
-    logo: `${baseUrl}/images/krutikalpa-logo.svg`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${baseUrl}/images/logo/K_LOGO.png`,
+      width: 512,
+      height: 512,
+    },
     description: companyData.subheadline,
     telephone: companyData.contact.phone,
     email: companyData.contact.email,
@@ -34,14 +49,7 @@ export function JsonLd({ type = "Organization", data, breadcrumbs }: JsonLdProps
       postalCode: companyData.contact.address.pincode,
       addressCountry: "IN",
     },
-    sameAs: [
-      companyData.social.linkedin,
-      companyData.social.facebook,
-      companyData.social.twitter,
-      companyData.social.instagram,
-      companyData.social.youtube,
-      companyData.social.github,
-    ],
+    sameAs: validSocialLinks,
   };
 
   const localBusinessSchema = {
@@ -54,8 +62,8 @@ export function JsonLd({ type = "Organization", data, breadcrumbs }: JsonLdProps
     url: `${baseUrl}/`,
     telephone: companyData.contact.phone,
     email: companyData.contact.email,
-    priceRange: "$$$",
-    currenciesAccepted: "INR, USD",
+    priceRange: "$$",
+    currenciesAccepted: "INR",
     paymentAccepted: "Bank Transfer, Credit Card",
     areaServed: [
       {
@@ -113,6 +121,14 @@ export function JsonLd({ type = "Organization", data, breadcrumbs }: JsonLdProps
       "@id": `${baseUrl}/#organization`,
     },
     inLanguage: "en-US",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${baseUrl}/services/?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
   };
 
   let schemaPayload: Record<string, any>;

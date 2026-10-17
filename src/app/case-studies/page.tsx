@@ -16,23 +16,23 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
-  title: "Case Studies | Enterprise Engineering Deep Dives & Client Impact",
+  title: "Case Studies | Client Projects & Engineering Impact",
   description:
-    "In-depth case studies detailing how KrutiKalpa Solutions engineered high-performance platforms for Manufacturing, E-Commerce, Public Health, and Civic Governance.",
+    "In-depth case studies from KrutiKalpa Solutions — how we solved real challenges in Manufacturing, E-Commerce, Healthcare, and Civic Governance with custom software and AI.",
   alternates: {
     canonical: "https://krutikalpa.com/case-studies/",
   },
   openGraph: {
-    title: "Engineering Case Studies | KrutiKalpa Solutions",
+    title: "Case Studies | KrutiKalpa Solutions",
     description:
-      "Deep dives into architectural decisions, challenges, and measurable operational outcomes delivered for enterprise clients.",
+      "Read detailed project breakdowns: architecture decisions, challenges solved, and measurable outcomes delivered for our clients across India.",
     url: "https://krutikalpa.com/case-studies/",
     images: [
       {
         url: "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
         width: 1200,
         height: 630,
-        alt: "KrutiKalpa Solutions Engineering Case Studies",
+        alt: "KrutiKalpa Solutions Case Studies",
       },
     ],
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Case Studies | KrutiKalpa Solutions",
     description:
-      "Technical architectures and business impact delivered in Manufacturing, Healthcare, and Governance.",
+      "How KrutiKalpa Solutions solved real problems in Manufacturing, Healthcare and Governance with software and AI.",
     images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
   },
 };

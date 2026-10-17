@@ -370,7 +370,7 @@ export function Hero() {
                 </p>
                 <div className="mt-6 flex gap-3">
                   <Link
-                    href="/contact"
+                    href="/contact/"
                     onClick={() => setVideoModalOpen(false)}
                     className="btn-orange-gradient rounded-full px-5 py-2 text-xs font-semibold"
                   >

@@ -6,22 +6,22 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Legal & Commercial Terms",
+  title: "Terms of Service | KrutiKalpa Solutions",
   description:
-    "Terms of Service governing the use of KrutiKalpa Solutions Private Limited (CIN: U62020PN2025PTC238309) websites, software engineering engagements, and AI solutions.",
+    "Read the Terms of Service for KrutiKalpa Solutions. Understand the terms governing use of our website and software development services.",
   alternates: {
     canonical: "https://krutikalpa.com/terms/",
   },
   openGraph: {
     title: "Terms of Service | KrutiKalpa Solutions",
     description:
-      "Enterprise engagement terms, intellectual property allocation, and service guidelines for KrutiKalpa Solutions.",
+      "Terms and conditions governing software development engagements and website use by KrutiKalpa Solutions.",
     url: "https://krutikalpa.com/terms/",
   },
   twitter: {
     card: "summary",
     title: "Terms of Service | KrutiKalpa Solutions",
-    description: "Enterprise software services, MSA guidelines, and intellectual property ownership.",
+    description: "Website terms of use and software service engagement guidelines for KrutiKalpa Solutions.",
   },
 };
 
@@ -169,7 +169,7 @@ export default function TermsPage() {
               Return to Home
             </Link>
             <Link
-              href="/privacy-policy"
+              href="/privacy-policy/"
               className="text-sm text-[#52525B] dark:text-zinc-400 hover:text-[#171717] dark:hover:text-white transition-colors"
             >
               Privacy Policy &rarr;

@@ -22,16 +22,16 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata: Metadata = {
-  title: "Careers | Engineering & AI Opportunities in Pune",
+  title: "Careers at KrutiKalpa Solutions | Tech Jobs in Pune",
   description:
-    "Explore tech careers at KrutiKalpa Solutions in Baner, Pune. Join our Next.js, Python AI, and cloud teams building enterprise architectures and digital governance platforms.",
+    "Join KrutiKalpa Solutions in Baner, Pune. Explore open roles in software development, AI engineering, and mobile development. Apply to build impactful technology products.",
   alternates: {
     canonical: "https://krutikalpa.com/careers/",
   },
   openGraph: {
-    title: "Careers at KrutiKalpa Solutions | Pune Engineering Roles",
+    title: "Careers at KrutiKalpa Solutions | Tech Jobs in Pune",
     description:
-      "Join an engineering-first culture solving mission-critical software and AI problems in Pune, Maharashtra. Explore our open roles.",
+      "Explore engineering career opportunities at KrutiKalpa Solutions — a software and AI company in Pune. View open roles and apply today.",
     url: "https://krutikalpa.com/careers/",
     images: [
       {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Careers at KrutiKalpa Solutions | Pune, India",
     description:
-      "Build the future of enterprise software, autonomous AI, and cloud systems with KrutiKalpa Solutions.",
+      "Open tech jobs at KrutiKalpa Solutions in Pune. Software, AI and mobile engineering roles available.",
     images: ["https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png"],
   },
 };
