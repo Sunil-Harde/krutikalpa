@@ -137,9 +137,7 @@ export function Hero() {
             </h1>
 
             <p className="max-w-2xl text-base sm:text-lg md:text-xl leading-relaxed text-zinc-600 dark:text-zinc-300">
-              We design and develop websites, web applications, AI agents,
-              chatbots and custom software solutions to help businesses grow,
-              streamline operations and create lasting value.
+              Transforming modern businesses through technology: KrutiKalpa designs, builds, and deploys high-performance websites, scalable web applications, autonomous AI agents, intelligent chatbots, and custom software solutions that modernize operations and drive sustainable growth.
             </p>
 
             {/* Hero buttons */}
@@ -350,19 +348,19 @@ export function Hero() {
             </button>
 
             <div className="space-y-4">
-              <h3
+              <p
                 id="hero-video-title"
                 className="flex items-center gap-2 text-xl font-bold text-zinc-950 dark:text-white"
               >
                 <span className="h-2.5 w-2.5 rounded-full bg-[#F97316]" />
                 KrutiKalpa Corporate Introduction
-              </h3>
+              </p>
 
               <div className="flex aspect-video w-full flex-col items-center justify-center rounded-xl border border-zinc-200 dark:border-white/[0.08] bg-zinc-50 dark:bg-zinc-900 p-6 text-center">
                 <Sparkles className="mb-3 h-12 w-12 animate-bounce text-[#F97316]" />
-                <h4 className="text-lg font-bold text-zinc-950 dark:text-white">
+                <p className="text-lg font-bold text-zinc-950 dark:text-white">
                   Engineering Enterprise Excellence
-                </h4>
+                </p>
                 <p className="mt-1 max-w-md text-sm text-zinc-600 dark:text-zinc-400">
                   Discover how KrutiKalpa Solutions delivers scalable digital
                   products, AI automation agents, and transformative enterprise

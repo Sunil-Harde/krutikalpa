@@ -111,7 +111,7 @@ export default function AboutPage() {
                   <div className="w-8 h-8 rounded-lg bg-[#FF6B0A]/15 text-[#FF6B0A] flex items-center justify-center font-bold">
                     <Target className="w-4 h-4" />
                   </div>
-                  <h4 className="text-sm font-bold text-zinc-900 dark:text-white">Our Mission</h4>
+                  <h3 className="text-sm font-bold text-zinc-900 dark:text-white">Our Mission</h3>
                 </div>
                 <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">{companyData.mission}</p>
               </div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
                   <div className="w-8 h-8 rounded-lg bg-[#FF6B0A]/15 text-[#FF6B0A] flex items-center justify-center font-bold">
                     <Sparkles className="w-4 h-4" />
                   </div>
-                  <h4 className="text-sm font-bold text-zinc-900 dark:text-white">Our Vision</h4>
+                  <h3 className="text-sm font-bold text-zinc-900 dark:text-white">Our Vision</h3>
                 </div>
                 <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">{companyData.vision}</p>
               </div>

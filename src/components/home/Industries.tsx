@@ -58,9 +58,8 @@ export function Industries() {
           {featuredIndustries.map((ind) => {
             const IconComponent = iconMap[ind.iconName] || Factory;
             return (
-              <Link
+              <div
                 key={ind.id}
-                href={`/industries/#${ind.id}`}
                 className="group relative bg-white dark:bg-[#101010] border border-[#D1D5DB] dark:border-[#262626] hover:border-[#FF6B0A]/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-[#FF6B0A]/15 flex flex-col justify-between"
               >
                 {/* Image Thumbnail with Overlay */}
@@ -84,7 +83,13 @@ export function Industries() {
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-lg font-bold text-zinc-900 dark:text-white group-hover:text-[#FF6B0A] transition-colors leading-snug mb-2">
-                      {ind.title}
+                      <Link
+                        href={`/industries/#${ind.id}`}
+                        className="focus:outline-none"
+                      >
+                        <span className="absolute inset-0" aria-hidden="true" />
+                        {ind.title} Solutions
+                      </Link>
                     </h3>
                     <p className="text-sm sm:text-[15px] text-zinc-600 dark:text-zinc-400 leading-relaxed">
                       {ind.shortDescription}
@@ -92,11 +97,11 @@ export function Industries() {
                   </div>
 
                   <div className="mt-5 pt-3 border-t border-zinc-100 dark:border-white/[0.05] flex items-center justify-between text-[#FF6B0A] text-sm font-semibold">
-                    <span>Explore Industry</span>
+                    <span>{ind.title} Details</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
-              </Link>
+              </div>
             );
           })}
         </div>

@@ -102,10 +102,10 @@ export function ServiceCard({ service, priority = false }: ServiceCardProps) {
         {/* 6. Existing "View Service Specifications" link */}
         <div className="pt-4 border-t border-zinc-100 dark:border-white/[0.06] flex items-center justify-between mt-auto">
           <Link
-            href={`/services/${service.slug}`}
+            href={`/services/${service.slug}/`}
             className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#FF6B0A] hover:text-[#FF8C38] group/link transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF6B0A] rounded-md"
           >
-            <span>View Service Specifications</span>
+            <span>Explore {service.title.split("&")[0].trim()}</span>
             <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform motion-reduce:transform-none" />
           </Link>
         </div>

@@ -35,9 +35,7 @@ export function About() {
               </h2>
 
               <p className="text-zinc-600 dark:text-zinc-300 text-base sm:text-lg leading-relaxed pt-1">
-                We are a technology-driven company focused on building innovative digital products
-                including websites, web applications, AI agents, chatbots and custom software
-                solutions that solve real business problems, solutions that make scale.
+                We are a technology-driven engineering team transforming businesses through modern digital solutions. From custom enterprise software and scalable web applications to autonomous AI agents and conversational chatbots, we build robust systems engineered to scale reliably.
               </p>
             </div>
 
@@ -49,9 +47,9 @@ export function About() {
                   <Users2 className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-bold text-zinc-950 dark:text-white leading-tight">
+                  <p className="text-base sm:text-lg font-bold text-zinc-950 dark:text-white leading-tight">
                     Client-Centric Approach
-                  </h4>
+                  </p>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Your success is our priority</p>
                 </div>
               </div>
@@ -62,7 +60,7 @@ export function About() {
                   <Lightbulb className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-bold text-zinc-950 dark:text-white leading-tight">Innovation Driven</h4>
+                  <p className="text-base sm:text-lg font-bold text-zinc-950 dark:text-white leading-tight">Innovation Driven</p>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Always ahead with technology</p>
                 </div>
               </div>
@@ -73,9 +71,9 @@ export function About() {
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-bold text-zinc-950 dark:text-white leading-tight">
+                  <p className="text-base sm:text-lg font-bold text-zinc-950 dark:text-white leading-tight">
                     Quality & Reliability
-                  </h4>
+                  </p>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Delivering scalable solutions</p>
                 </div>
               </div>
@@ -86,9 +84,9 @@ export function About() {
                   <Handshake className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-bold text-zinc-950 dark:text-white leading-tight">
+                  <p className="text-base sm:text-lg font-bold text-zinc-950 dark:text-white leading-tight">
                     Long-term Partnership
-                  </h4>
+                  </p>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">Growing together</p>
                 </div>
               </div>

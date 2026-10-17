@@ -141,29 +141,29 @@ export default function CaseStudiesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
               {/* Challenge */}
               <div className="bg-zinc-50 dark:bg-white/[0.02] p-6 rounded-2xl border border-zinc-200 dark:border-white/[0.05]">
-                <h3 className="text-sm font-bold uppercase tracking-wider text-rose-500 dark:text-rose-400 flex items-center gap-2 mb-3">
+                <p className="text-sm font-bold uppercase tracking-wider text-rose-500 dark:text-rose-400 flex items-center gap-2 mb-3">
                   <AlertCircle className="w-4 h-4" />
                   The Operational Challenge
-                </h3>
+                </p>
                 <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">{project.challenge}</p>
               </div>
 
               {/* Solution */}
               <div className="bg-zinc-50 dark:bg-white/[0.02] p-6 rounded-2xl border border-zinc-200 dark:border-white/[0.05]">
-                <h3 className="text-sm font-bold uppercase tracking-wider text-[#FF6B0A] flex items-center gap-2 mb-3">
+                <p className="text-sm font-bold uppercase tracking-wider text-[#FF6B0A] flex items-center gap-2 mb-3">
                   <Cpu className="w-4 h-4" />
                   The KrutiKalpa Engineering Solution
-                </h3>
+                </p>
                 <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">{project.solution}</p>
               </div>
             </div>
 
             {/* Results */}
             <div className="mt-6 p-6 rounded-2xl bg-zinc-50 dark:bg-white/[0.02] border border-zinc-200 dark:border-white/[0.05]">
-              <h3 className="text-sm font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-2 mb-3">
+              <p className="text-sm font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-2 mb-3">
                 <BarChart3 className="w-4 h-4" />
                 Measurable Impact Delivered
-              </h3>
+              </p>
               <ul className="grid grid-cols-1 md:grid-cols-3 gap-3">
                 {project.results.map((res, i) => (
                   <li key={i} className="flex items-start gap-2 text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">

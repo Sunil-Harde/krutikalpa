@@ -39,10 +39,9 @@ export function Portfolio() {
         {/* 3 Featured Cards Grid matching Section 7 of approved design */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {featured.map((project) => (
-            <Link
+            <div
               key={project.id}
-              href={`/portfolio/#${project.slug}`}
-              className="group bg-white dark:bg-[#101010] border border-zinc-200 dark:border-white/[0.08] hover:border-[#FF6B0A]/50 rounded-2xl p-0 overflow-hidden shadow-sm dark:shadow-none transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-[#FF6B0A]/15 flex flex-col justify-between"
+              className="group relative bg-white dark:bg-[#101010] border border-zinc-200 dark:border-white/[0.08] hover:border-[#FF6B0A]/50 rounded-2xl p-0 overflow-hidden shadow-sm dark:shadow-none transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-[#FF6B0A]/15 flex flex-col justify-between"
             >
               {/* Mockup Preview Area */}
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-zinc-950 p-3">
@@ -75,7 +74,13 @@ export function Portfolio() {
 
                   {/* Title */}
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white group-hover:text-[#FF6B0A] transition-colors mb-2.5">
-                    {project.title}
+                    <Link
+                      href={`/portfolio/#${project.slug}`}
+                      className="focus:outline-none"
+                    >
+                      <span className="absolute inset-0" aria-hidden="true" />
+                      {project.title}
+                    </Link>
                   </h3>
 
                   {/* Description */}
@@ -86,11 +91,11 @@ export function Portfolio() {
 
                 {/* Arrow Link matching "View Case Study ->" */}
                 <div className="pt-3.5 border-t border-zinc-100 dark:border-white/[0.06] flex items-center text-sm font-semibold text-[#FF6B0A] gap-1.5 group-hover:gap-2.5 transition-all">
-                  <span>View Case Study</span>
+                  <span>Explore Case Study</span>
                   <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

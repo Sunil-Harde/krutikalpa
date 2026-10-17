@@ -144,7 +144,7 @@ export function PortfolioClient() {
                     href={`/case-studies/#${project.slug}`}
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#FF6B0A] hover:text-[#FF8C38] transition-colors"
                   >
-                    <span>View Case Study</span>
+                    <span>{project.title.split(":")[0]} Case Study</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>

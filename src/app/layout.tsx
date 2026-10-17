@@ -70,6 +70,15 @@ export const metadata: Metadata = {
       "https://krutikalpa.com/images/hero/KrutiKalpa_Solutions_Room.png",
     ],
   },
+  icons: {
+    icon: [
+      { url: "/images/logo/K_LOGO.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/logo/K_LOGO.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/images/logo/K_LOGO.png",
+  },
   robots: {
     index: true,
     follow: true,
@@ -94,6 +103,12 @@ export default function RootLayout({
         <link
           rel="icon"
           href="/images/logo/K_LOGO.png"
+          type="image/png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/images/logo/K_LOGO.png"
+          sizes="180x180"
           type="image/png"
         />
         <script

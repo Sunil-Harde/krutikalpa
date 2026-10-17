@@ -71,9 +71,9 @@ export function Process() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-lg font-bold text-zinc-900 dark:text-white group-hover:text-[#FF6B0A] transition-colors mb-2">
+                  <p className="text-lg font-bold text-zinc-900 dark:text-white group-hover:text-[#FF6B0A] transition-colors mb-2">
                     {step.title}
-                  </h3>
+                  </p>
 
                   {/* Short Subtitle */}
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-[210px]">

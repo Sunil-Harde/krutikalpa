@@ -137,9 +137,9 @@ export default function IndustriesPage() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                     {/* Common Challenges */}
                     <div className="bg-zinc-50 dark:bg-white/[0.02] p-4 rounded-xl border border-zinc-200 dark:border-white/[0.05]">
-                      <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-600 dark:text-zinc-400 mb-2.5">
+                      <p className="text-xs font-bold uppercase tracking-wider text-zinc-600 dark:text-zinc-400 mb-2.5">
                         Industry Bottlenecks
-                      </h4>
+                      </p>
                       <ul className="space-y-1.5 text-xs text-zinc-600 dark:text-zinc-400">
                         {ind.challenges.slice(0, 3).map((c, i) => (
                           <li key={i} className="flex items-start gap-1.5">
@@ -152,9 +152,9 @@ export default function IndustriesPage() {
 
                     {/* Solutions */}
                     <div className="bg-zinc-50 dark:bg-white/[0.02] p-4 rounded-xl border border-zinc-200 dark:border-white/[0.05]">
-                      <h4 className="text-xs font-bold uppercase tracking-wider text-[#FF6B0A] mb-2.5">
+                      <p className="text-xs font-bold uppercase tracking-wider text-[#FF6B0A] mb-2.5">
                         KrutiKalpa Implementations
-                      </h4>
+                      </p>
                       <ul className="space-y-1.5 text-xs text-zinc-700 dark:text-zinc-300">
                         {ind.solutions.slice(0, 3).map((s, i) => (
                           <li key={i} className="flex items-start gap-1.5">
@@ -176,7 +176,7 @@ export default function IndustriesPage() {
                       href="/contact/"
                       className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#FF6B0A] hover:text-[#FF8C38] transition-colors"
                     >
-                      <span>Discuss Your Industry Solution</span>
+                      <span>Consult on {ind.title}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>

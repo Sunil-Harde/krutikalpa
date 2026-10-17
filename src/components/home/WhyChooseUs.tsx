@@ -49,9 +49,9 @@ export function WhyChooseUs() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-lg font-bold text-zinc-900 dark:text-white group-hover:text-[#FF6B0A] transition-colors mb-2.5">
+                  <p className="text-lg font-bold text-zinc-900 dark:text-white group-hover:text-[#FF6B0A] transition-colors mb-2.5">
                     {item.title}
-                  </h3>
+                  </p>
 
                   {/* Description */}
                   <p className="text-sm sm:text-[15px] text-zinc-600 dark:text-zinc-400 leading-relaxed">

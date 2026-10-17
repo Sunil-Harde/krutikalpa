@@ -236,6 +236,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       {/* Deliverables, Tech Stack, & Real-World Use Cases */}
       <section className="py-16 bg-[#F1F3F5] dark:bg-[#080808] border-y border-zinc-200 dark:border-white/[0.08] transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="sr-only">Deliverables, Technologies, and Applications</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {/* Column 1: Deliverables */}
             <div className="glass-panel p-6 rounded-2xl">

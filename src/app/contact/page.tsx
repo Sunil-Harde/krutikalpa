@@ -178,9 +178,9 @@ export default function ContactPage() {
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-[#FF6B0A]" />
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#52525B] dark:text-zinc-400">
+                  <p className="text-xs font-bold uppercase tracking-wider text-[#52525B] dark:text-zinc-400">
                     Business Hours
-                  </h4>
+                  </p>
                   <p className="text-sm text-[#171717] dark:text-zinc-200 font-medium">
                     Monday &ndash; Saturday: 10:00 AM &ndash; 6:00 PM IST
                   </p>
@@ -189,9 +189,9 @@ export default function ContactPage() {
 
               <div className="pt-4 border-t border-[#D1D5DB] dark:border-white/[0.06] flex items-center justify-between">
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#52525B] dark:text-zinc-400">
+                  <p className="text-xs font-bold uppercase tracking-wider text-[#52525B] dark:text-zinc-400">
                     Quick WhatsApp Chat
-                  </h4>
+                  </p>
                   <p className="text-xs text-[#52525B] dark:text-zinc-400">Chat directly with our solutions team</p>
                 </div>
                 <a
@@ -207,9 +207,9 @@ export default function ContactPage() {
 
             {/* Engagement Guarantees */}
             <div className="p-5 rounded-2xl bg-white/60 dark:bg-white/[0.02] border border-[#D1D5DB] dark:border-white/[0.06]">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#171717] dark:text-zinc-300 mb-3">
+              <p className="text-xs font-bold uppercase tracking-wider text-[#171717] dark:text-zinc-300 mb-3">
                 Our Engagement Guarantee
-              </h4>
+              </p>
               <ul className="space-y-2">
                 {guarantees.map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2 text-xs text-[#52525B] dark:text-zinc-400">

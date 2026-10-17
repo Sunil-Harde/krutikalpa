@@ -57,6 +57,7 @@ export default function PortfolioPage() {
 
       {/* Main Portfolio Client Section */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="sr-only">Delivered Solutions & Case Studies</h2>
         <PortfolioClient />
       </section>
 

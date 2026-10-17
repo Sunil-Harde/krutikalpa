@@ -63,9 +63,8 @@ export function Services() {
           {coreServices.map((service) => {
             const IconComponent = iconMap[service.iconName] || Code2;
             return (
-              <Link
+              <div
                 key={service.id}
-                href={`/services/${service.slug}/`}
                 className="group relative bg-white dark:bg-[#101010] border border-[#D1D5DB] dark:border-[#262626] hover:border-[#FF6B0A]/50 rounded-2xl p-7 sm:p-8 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-[#FF6B0A]/10 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
               >
                 <div>
@@ -76,7 +75,13 @@ export function Services() {
 
                   {/* Title */}
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-white group-hover:text-[#FF6B0A] transition-colors mb-3">
-                    {service.title}
+                    <Link
+                      href={`/services/${service.slug}/`}
+                      className="focus:outline-none"
+                    >
+                      <span className="absolute inset-0" aria-hidden="true" />
+                      {service.title}
+                    </Link>
                   </h3>
 
                   {/* Description */}
@@ -87,10 +92,10 @@ export function Services() {
 
                 {/* Arrow CTA */}
                 <div className="flex items-center text-sm font-semibold text-[#FF6B0A] gap-1.5 group-hover:gap-2.5 transition-all">
-                  <span>Explore Details</span>
+                  <span>Explore {service.title}</span>
                   <ArrowRight className="w-4 h-4" />
                 </div>
-              </Link>
+              </div>
             );
           })}
         </div>

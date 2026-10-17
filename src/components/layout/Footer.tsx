@@ -131,9 +131,9 @@ export function Footer() {
 
           {/* Column 2: Quick Links */}
           <div className="min-w-0 md:col-start-1 md:row-start-3 lg:col-span-2 lg:col-start-auto lg:row-start-auto">
-            <h4 className="mb-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
+            <p className="mb-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
               Quick Links
-            </h4>
+            </p>
 
             <ul className="space-y-2.5">
               {quickLinks.map((item) => (
@@ -151,9 +151,9 @@ export function Footer() {
 
           {/* Column 3: Our Services */}
           <div className="min-w-0 md:col-start-2 md:row-start-3 lg:col-span-3 lg:col-start-auto lg:row-start-auto">
-            <h4 className="mb-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
+            <p className="mb-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
               Our Services
-            </h4>
+            </p>
 
             <ul className="space-y-2.5">
               {footerServices.map((service) => (
@@ -171,9 +171,9 @@ export function Footer() {
 
           {/* Column 4: Contact Information */}
           <div className="col-span-2 min-w-0 md:col-span-1 md:col-start-2 md:row-start-1 lg:col-span-3 lg:col-start-auto lg:row-start-auto">
-            <h4 className="mb-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
+            <p className="mb-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
               Contact Info
-            </h4>
+            </p>
 
             <ul className="space-y-4 text-[13px] sm:text-sm leading-5 text-zinc-600 dark:text-zinc-400">
               {/* Address */}
@@ -223,7 +223,7 @@ export function Footer() {
                 href="/contact/"
                 className="inline-flex max-w-full items-center gap-1.5 text-xs sm:text-sm font-semibold leading-5 text-[#FF6B0A] hover:text-[#E85D04] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF6B0A] rounded-sm"
               >
-                <span>Schedule a Technical Consultation</span>
+                <span>Schedule Consultation</span>
                 <ArrowUpRight className="h-4 w-4 shrink-0" />
               </Link>
             </div>
